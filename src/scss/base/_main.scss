@@ -1,6 +1,16 @@
 .btn{
     text-transform: uppercase;
 }
+.btn-outline-info {
+    text-transform: none;
+    color: #666;
+    &:not(:hover){
+	.icon{
+	    color: #ccc;
+	    transition: color .15s ease-in-out;
+	}
+    }
+}
 .section{
     padding-top: 18px;
     padding-bottom: 25px;
