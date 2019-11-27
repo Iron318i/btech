@@ -2,7 +2,7 @@
 title: "Typography | Btech",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
-
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
 <div class="container">
     <h1>Typography</h1>
 
@@ -79,9 +79,13 @@ title: "Typography | Btech",
 		    </div>
 		    <div class="form-group">
 			<div class="input-group input-group-lg mb-3">
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 			    <div class="input-group-append">
-				<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+				<button class="btn btn-outline-secondary" type="button" id="button-addon2">
+				    <svg class="icon eye-open">
+					<use xlink:href="#eye-open"></use>
+				    </svg>
+				</button>
 			    </div>
 			</div>
 		    </div>
