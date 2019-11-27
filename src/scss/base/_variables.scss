@@ -7,11 +7,16 @@
 //
 // Color system
 
-$balck: #000;
+$black: #000;
 
 $gray-100: #f3f3f3;
+$gray-600: #8b8b8b;
 $gray-700: #414042;
 $gray-800: #333333;
+
+$primary: $gray-700;
+$secondary: $gray-600;
+
 // Options
 // Spacing
 // Body
@@ -44,6 +49,14 @@ $grid-gutter-width:   16px;
 // Components
 // Typography
 $font-family-sans-serif: 'Open Sans', sans-serif;
+$line-height-base: 1.3;
+
+$headings-font-weight:  300;
+$headings-color:   $black;
+
+$h2-font-size:  rem(25px);
+$headings-line-height: 1.5;
+
 // Tables
 // Buttons
 // Forms
