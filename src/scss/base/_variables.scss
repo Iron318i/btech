@@ -62,11 +62,15 @@ $line-height-base: 1.3;
 
 $font-size-lg: rem(18px);
 
-$headings-font-weight:  300;
+$headings-font-weight:  400;
 $headings-color:   $black;
 
+$h1-font-size:  rem(25px);
 $h2-font-size:  rem(25px);
+$h3-font-size:  rem(18px);
+
 $headings-line-height: 1.5;
+$headings-margin-bottom: 1rem;
 
 $text-muted: $gray-500;
 // Tables

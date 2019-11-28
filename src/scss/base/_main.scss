@@ -4,7 +4,9 @@
 	background-color: #{$value};
     }
 }
-
+.h1, h1, .h2, h2 {
+    font-weight: 300;
+}
 .btn{
     text-transform: uppercase;
 }
