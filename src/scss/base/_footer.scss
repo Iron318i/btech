@@ -5,17 +5,29 @@
 }
 .top-footer{
     margin-bottom: 30px;
-    .nav{
-	flex-direction: column;
-	a{
-	    color: #fff;
-	    line-height: 1.77;
-	    transition: all .2s linear;
-	    @include hover-focus{
-		opacity: .7;
-		padding-left: .3em;
+    .col-menu{
+	.nav{
+	    flex-direction: column;
+	    a{
+		color: #fff;
+		line-height: 1.77;
+		transition: all .2s linear;
+		@include hover-focus{
+		    opacity: .7;
+		    padding-left: .3em;
+		}
 	    }
 	}
+    }
+}
+.col-payments{
+    li+li{
+	margin-left: 7px;
+    }
+    .icon{
+	color: $gray-500;
+	width: rem(36px);
+	height: rem(36px);
     }
 }
 .bottom-footer{

@@ -11,8 +11,8 @@
 }
 @include media-breakpoint-up(md) {
     .col-logo{
-	flex: 0 0 25%;
-	max-width: 25%;
+	flex: 0 0 24%;
+	max-width: 24%;
     }
     .col-menu{
 	flex: 0 0 56%;
@@ -24,7 +24,7 @@
 	}
     }
     .col-payments{
-	flex: 0 0 19%;
-	max-width: 19%;
+	flex: 0 0 20%;
+	max-width: 20%;
     }
 }
