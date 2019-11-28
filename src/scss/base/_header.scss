@@ -1,3 +1,33 @@
 .site-header{
     background-color: $black;
+    .top{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-items: center;
+    }
+    .bottom{
+	padding-bottom: 20px;
+	align-items: center;
+    }
+    a{
+	color: #fff;
+    }
+    .search{
+	.form-control{
+	    border-color: #fff;
+	    padding-top: 6px;
+	    padding-bottom: 6px;
+	    height: 32px;
+	}
+	.btn{
+	    border-color: #fff;
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	    .icon{
+		color: $black;
+		width: 19px;
+		height: 19px;
+	    }
+	}
+    }
 }

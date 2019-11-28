@@ -49,6 +49,9 @@ select{
     }
 }
 .input-group{
+    .btn{
+	border-radius: 0;
+    }
     select.form-control{
 	background: #fff url(../img/select-group.png) center right no-repeat;
 	background-size: rem(25px 34px) ;
