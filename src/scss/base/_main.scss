@@ -35,7 +35,7 @@ select{
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	position: relative;
-	background: url(../img/select.png) center right no-repeat;
+	background: #fff url(../img/select.png) center right no-repeat;
 	background-size: rem(41px 34px) ;
 	padding-right: rem(46px);
     }
@@ -50,7 +50,7 @@ select{
 }
 .input-group{
     select.form-control{
-	background: url(../img/select-group.png) center right no-repeat;
+	background: #fff url(../img/select-group.png) center right no-repeat;
 	background-size: rem(25px 34px) ;
 	padding-right: rem(30px);
     }
