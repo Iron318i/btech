@@ -6,6 +6,9 @@
 }
 .h1, h1, .h2, h2 {
     font-weight: 300;
+    small{
+	font-weight: 300;
+    }
 }
 .btn{
     text-transform: uppercase;
@@ -27,6 +30,10 @@
 	color: $black;
 	text-decoration: underline;
     }
+}
+label{
+    font-weight: 700;
+    color: $black;
 }
 .custom-control-label{
     color: $input-placeholder-color;
@@ -95,6 +102,7 @@ select{
 	display: none;
     }
 }
+/*Sections*/
 .section{
     padding-top: 18px;
     padding-bottom: 25px;

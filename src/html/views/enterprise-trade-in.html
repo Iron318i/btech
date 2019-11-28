@@ -7,57 +7,24 @@ title: "Register | Btech",
     <h1 class="h1">Enterprise Trade-in</h1>
 </div>
 <section class="section container">
-    <div class="row row-100">
-	<div class="col-md-6">
-	    <h3 class="h3">Existing customer</h3>
-	    <form>
+    <form>
+	<div class="row row-100">
+	    <div class="col-md-6">
+		<h2 class="h2">Your Contact information</h2>
 		<div class="form-group">
-		    <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+		    <label>First name*</label>
+		    <input type="text" class="form-control form-control-lg">
 		</div>
 		<div class="form-group">
-		    <div class="input-group input-group-lg">
-			<input type="password" class="form-control" placeholder="Password">
-			<div class="input-group-append">
-			    <button class="btn btn-outline-info" type="button">
-				<svg class="icon eye-open">
-				<use xlink:href="#eye-open"></use>
-				</svg>
-			    </button>
-			</div>
-		    </div>
-		    <span class="form-text"><a href="#">Forgot your password?</a></span>
+		    <label>Last name*</label>
+		    <input type="text" class="form-control form-control-lg">
 		</div>
 		<div class="form-group">
-		    <button type="submit" class="btn btn-primary btn-lg btn-block">Welcome back!</button>
-		</div>
-	    </form>
-	</div>
-	<div class="col-md-6">
-	    <h3 class="h3">New Customer</h3>
-	    <form>
-		<div class="form-group">
-		    <input type="email" class="form-control form-control-lg" placeholder="Enter email*">
+		    <label>Enter email*</label>
+		    <input type="email" class="form-control form-control-lg">
 		</div>
 		<div class="form-group">
-		    <input type="text" class="form-control form-control-lg" placeholder="First name*">
-		</div>
-		<div class="form-group">
-		    <input type="text" class="form-control form-control-lg" placeholder="Last name*">
-		</div>
-		<div class="form-group">
-		    <div class="input-group input-group-lg">
-			<input type="password" class="form-control" placeholder="Password">
-			<div class="input-group-append">
-			    <button class="btn btn-outline-info" type="button">
-				<svg class="icon eye-open">
-				<use xlink:href="#eye-open"></use>
-				</svg>
-			    </button>
-			</div>
-		    </div>
-		    <span class="form-text text-muted">At least 8 characters, including 1 uppercase letter, 1 lowercase letter and 1 number. <br>Because you can never be too sure.</span>
-		</div>
-		<div class="form-group">
+		    <label>Phone Number*</label>
 		    <div class="input-group input-group-lg">
 			<div class="input-group-append">
 			    <select class="form-control form-control-lg">
@@ -74,24 +41,49 @@ title: "Register | Btech",
 		    </div>
 		</div>
 		<div class="form-group">
-		    <div class="custom-control custom-checkbox">
-			<input type="checkbox" class="custom-control-input" id="agree-news">
-			<label class="custom-control-label" for="agree-news">I agree to get news and deals from bTech Marketby SMS</label>
-		    </div>
+		    <label>Company/Organization*</label>
+		    <input type="text" class="form-control form-control-lg">
 		</div>
 		<div class="form-group">
-		    <div class="custom-control custom-checkbox">
-			<input type="checkbox" class="custom-control-input" id="agree-newsletters">
-			<label class="custom-control-label" for="agree-newsletters">I agree to receive emails with the best deals on the web and newsletters from <br>bTech Market.</label>
-		    </div>
+		    <label>Additional Information <span class="font-weight-normal">(optional)</span></label>
+		    <textarea rows="10" class="form-control"></textarea>
+		</div>
+	    </div>
+	    <div class="col-md-6">
+		<h2 class="h2">What Do You Have to Sell <small>(optional)</small></h2>
+		<div class="form-group">
+		    <label>Device Type</label>
+		    <select class="form-control form-control-lg">
+			<option>Please choose</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+		    </select>
 		</div>
 		<div class="form-group">
-		    <button type="submit" class="btn btn-primary btn-lg btn-block">Nice to meet you!</button>
-		    <span class="form-text text-muted">By creating an account, you <a href="#">agree to our website terms and conditions</a>, our <a href="#">privacy policy</a>, and confirm that you are at least 16 years old.</span>
+		    <label>Condition</label>
+		    <select class="form-control form-control-lg">
+			<option>Please choose</option>
+			<option>Condition</option>
+			<option>Condition</option>
+			<option>Condition</option>
+			<option>Condition</option>
+		    </select>
 		</div>
-	    </form>
+		<div class="form-group">
+		    <label>Quantity</label>
+		    <input type="text" class="form-control form-control-lg">
+		</div>
+		<div class="form-group">
+		    <button type="button" class="btn btn-link">Add more devices</button>
+		</div>
+		<div class="form-group">
+		    <button type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+		</div>
+	    </div>
 	</div>
-    </div>
+    </form>
 </section>
 
 
