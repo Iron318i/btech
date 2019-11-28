@@ -29,6 +29,20 @@
 .custom-control-label{
     color: $input-placeholder-color;
 }
+select.form-control{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    background: url(../img/select.png) center right no-repeat;
+    background-size: rem(41px 34px) ;
+}
+select.form-control-lg{
+    background-size: rem(49px 41px) ;
+}
+select.form-control-sm{
+    background-size: rem(31px 26px) ;
+}
 .section{
     padding-top: 18px;
     padding-bottom: 25px;
