@@ -29,19 +29,65 @@
 .custom-control-label{
     color: $input-placeholder-color;
 }
-select.form-control{
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+select{
+    &.form-control{
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	background: url(../img/select.png) center right no-repeat;
+	background-size: rem(41px 34px) ;
+	padding-right: rem(46px);
+    }
+    &.form-control-lg{
+	background-size: rem(49px 41px) ;
+	padding-right: rem(55px);
+    }
+    &.form-control-sm{
+	background-size: rem(31px 26px) ;
+	padding-right: rem(36px);
+    }
+}
+.input-group{
+    select.form-control{
+	background: url(../img/select-group.png) center right no-repeat;
+	background-size: rem(25px 34px) ;
+	padding-right: rem(30px);
+    }
+}
+.input-group-lg{
+    select.form-control{
+	background-size: rem(30px 41px) ;
+	padding-right: rem(35px);
+    }
+}
+.input-group-sm{
+    select.form-control{
+	background-size: rem(19px 26px) ;
+	padding-right: rem(25px);
+    }
+}
+.input-group>.custome-placeholder{
     position: relative;
-    background: url(../img/select.png) center right no-repeat;
-    background-size: rem(41px 34px) ;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    .form-control{
+	border-left: 0;
+    }
 }
-select.form-control-lg{
-    background-size: rem(49px 41px) ;
-}
-select.form-control-sm{
-    background-size: rem(31px 26px) ;
+.custome-placeholder{
+    position: relative;
+    .placeholder{
+	position: absolute;
+	pointer-events: none;
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+    }
+    & input:valid + .placeholder {
+	display: none;
+    }
 }
 .section{
     padding-top: 18px;
