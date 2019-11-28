@@ -1,0 +1,98 @@
+<% var data = {
+title: "Register | Btech",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<div class="page-header bg-1">
+    <h1 class="h1">Enterprise Trade-in</h1>
+</div>
+<section class="section container">
+    <div class="row row-100">
+	<div class="col-md-6">
+	    <h3 class="h3">Existing customer</h3>
+	    <form>
+		<div class="form-group">
+		    <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+		    <div class="input-group input-group-lg">
+			<input type="password" class="form-control" placeholder="Password">
+			<div class="input-group-append">
+			    <button class="btn btn-outline-info" type="button">
+				<svg class="icon eye-open">
+				<use xlink:href="#eye-open"></use>
+				</svg>
+			    </button>
+			</div>
+		    </div>
+		    <span class="form-text"><a href="#">Forgot your password?</a></span>
+		</div>
+		<div class="form-group">
+		    <button type="submit" class="btn btn-primary btn-lg btn-block">Welcome back!</button>
+		</div>
+	    </form>
+	</div>
+	<div class="col-md-6">
+	    <h3 class="h3">New Customer</h3>
+	    <form>
+		<div class="form-group">
+		    <input type="email" class="form-control form-control-lg" placeholder="Enter email*">
+		</div>
+		<div class="form-group">
+		    <input type="text" class="form-control form-control-lg" placeholder="First name*">
+		</div>
+		<div class="form-group">
+		    <input type="text" class="form-control form-control-lg" placeholder="Last name*">
+		</div>
+		<div class="form-group">
+		    <div class="input-group input-group-lg">
+			<input type="password" class="form-control" placeholder="Password">
+			<div class="input-group-append">
+			    <button class="btn btn-outline-info" type="button">
+				<svg class="icon eye-open">
+				<use xlink:href="#eye-open"></use>
+				</svg>
+			    </button>
+			</div>
+		    </div>
+		    <span class="form-text text-muted">At least 8 characters, including 1 uppercase letter, 1 lowercase letter and 1 number. <br>Because you can never be too sure.</span>
+		</div>
+		<div class="form-group">
+		    <div class="input-group input-group-lg">
+			<div class="input-group-append">
+			    <select class="form-control form-control-lg">
+				<option>Can +1</option>
+				<option>Can +2</option>
+				<option>Can +3</option>
+				<option>Can +4</option>
+			    </select>
+			</div>
+			<div class="custome-placeholder">
+			    <input type="text" class="form-control form-control-lg" required="required">
+			    <div class="placeholder"><span class="text-muted">Phone number - optional</span><br><span>000-000-0000</span></div>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="agree-news">
+			<label class="custom-control-label" for="agree-news">I agree to get news and deals from bTech Marketby SMS</label>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="agree-newsletters">
+			<label class="custom-control-label" for="agree-newsletters">I agree to receive emails with the best deals on the web and newsletters from <br>bTech Market.</label>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <button type="submit" class="btn btn-primary btn-lg btn-block">Nice to meet you!</button>
+		    <span class="form-text text-muted">By creating an account, you <a href="#">agree to our website terms and conditions</a>, our <a href="#">privacy policy</a>, and confirm that you are at least 16 years old.</span>
+		</div>
+	    </form>
+	</div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

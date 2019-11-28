@@ -99,3 +99,19 @@ select{
     padding-top: 18px;
     padding-bottom: 25px;
 }
+.page-header{
+    text-align: center;
+    background-color: #393839;
+    padding: rem(16px 0);
+    .h1{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+	font-size: rem(22px);
+    }
+    &.bg-1{
+	background: #393839 url(../img/page-header-bg-1.jpg) 50% no-repeat;
+	background-size: cover;
+    }
+}
