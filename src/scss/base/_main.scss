@@ -85,7 +85,8 @@ select{
 	top: 50%;
 	transform: translateY(-50%);
     }
-    & input:valid + .placeholder {
+    & input:focus + .placeholder,
+	& input:valid + .placeholder {
 	display: none;
     }
 }
