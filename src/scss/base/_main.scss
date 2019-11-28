@@ -1,3 +1,10 @@
+@each $color, $value in $grays {
+    .swatch-#{$color} {
+	color: color-yiq($value);
+	background-color: #{$value};
+    }
+}
+
 .btn{
     text-transform: uppercase;
 }
@@ -5,10 +12,18 @@
     text-transform: none;
     color: #666;
     &:not(:hover){
+	background-color: #fff;
 	.icon{
 	    color: #ccc;
 	    transition: color .15s ease-in-out;
 	}
+    }
+}
+.form-text{
+    font-size: 12px;
+    a{
+	color: $black;
+	text-decoration: underline;
     }
 }
 .section{

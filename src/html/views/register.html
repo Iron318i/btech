@@ -2,30 +2,63 @@
 title: "Register | Btech",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
-
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
 <section class="section container">
     <div class="row">
 	<div class="col-md-6">
 	    <h3 class="h3">Existing customer</h3>
 	    <form>
 		<div class="form-group">
-		    <label for="exampleInputEmail1">Email address</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		    <input type="email" class="form-control form-control-lg" placeholder="Enter email">
 		</div>
 		<div class="form-group">
-		    <label for="exampleInputPassword1">Password</label>
-		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		    <div class="input-group input-group-lg">
+			<input type="password" class="form-control" placeholder="Password">
+			<div class="input-group-append">
+			    <button class="btn btn-outline-info" type="button">
+				<svg class="icon eye-open">
+				<use xlink:href="#eye-open"></use>
+				</svg>
+			    </button>
+			</div>
+		    </div>
+		    <span class="form-text"><a href="#">Forgot your password?</a></span>
 		</div>
-		<div class="form-group form-check">
-		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		<div class="form-group">
+		    <button type="submit" class="btn btn-primary btn-lg btn-block">Welcome back!</button>
 		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
 	    </form>
 	</div>
 	<div class="col-md-6">
 	    <h3 class="h3">New Customer</h3>
+	    <form>
+		<div class="form-group">
+		    <input type="email" class="form-control form-control-lg" placeholder="Enter email*">
+		</div>
+		<div class="form-group">
+		    <input type="text" class="form-control form-control-lg" placeholder="First name*">
+		</div>
+		<div class="form-group">
+		    <input type="text" class="form-control form-control-lg" placeholder="Last name*">
+		</div>
+		<div class="form-group">
+		    <div class="input-group input-group-lg">
+			<input type="password" class="form-control" placeholder="Password">
+			<div class="input-group-append">
+			    <button class="btn btn-outline-info" type="button">
+				<svg class="icon eye-open">
+				<use xlink:href="#eye-open"></use>
+				</svg>
+			    </button>
+			</div>
+		    </div>
+		    <span class="form-text text-muted">At least 8 characters, including 1 uppercase letter, 1 lowercase letter and 1 number. <br>Because you can never be too sure.</span>
+		</div>
+		<div class="form-group">
+		    <button type="submit" class="btn btn-primary btn-lg btn-block">Nice to meet you!</button>
+		    <span class="form-text text-muted">By creating an account, you <a href="#">agree to our website terms and conditions</a>, our <a href="#">privacy policy</a>, and confirm that you are at least 16 years old.</span>
+		</div>
+	    </form>
 	</div>
     </div>
 </section>
