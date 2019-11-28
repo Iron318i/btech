@@ -75,4 +75,25 @@
 	    background-size: 25px;
 	}
     }
+    .cart{
+	text-align: right;
+	.dropdown{
+	    display: inline-block;
+	    .btn{
+		color: #a1a1a1;
+	    }
+	    .dropdown-menu{
+		min-width: 6rem;
+	    }
+	    .dropdown-item {
+		color: $dropdown-link-color;
+	    }
+	}
+	.btn-cart{
+	    background: url(../img/i-cart.png) 50% no-repeat;
+	    background-size: 28px 27px;
+	    text-indent: -9999px;
+	    width: 30px;
+	}
+    }
 }
