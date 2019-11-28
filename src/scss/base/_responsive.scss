@@ -1,0 +1,11 @@
+@include media-breakpoint-up(xl) {
+    .row-100{
+	margin-left: -50px;
+	margin-right: -50px;
+	> .col,
+	> [class*="col-"] {
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+    }
+}
