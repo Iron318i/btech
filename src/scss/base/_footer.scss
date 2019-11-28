@@ -3,3 +3,24 @@
     background-color: $black;
     color: #fff;
 }
+.top-footer{
+    margin-bottom: 30px;
+    .nav{
+	flex-direction: column;
+	a{
+	    color: #fff;
+	    line-height: 1.77;
+	    transition: all .2s linear;
+	    @include hover-focus{
+		opacity: .7;
+		padding-left: .3em;
+	    }
+	}
+    }
+}
+.bottom-footer{
+
+}
+.copy{
+    color: #a3a3a3;
+}

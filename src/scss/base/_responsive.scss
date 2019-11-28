@@ -9,3 +9,22 @@
 	}
     }
 }
+@include media-breakpoint-up(md) {
+    .col-logo{
+	flex: 0 0 25%;
+	max-width: 25%;
+    }
+    .col-menu{
+	flex: 0 0 56%;
+	max-width: 56%;
+	display: flex;
+	.nav{
+	    flex: 0 0 33.333333333%;
+	    max-width: 33.333333333%;
+	}
+    }
+    .col-payments{
+	flex: 0 0 19%;
+	max-width: 19%;
+    }
+}
