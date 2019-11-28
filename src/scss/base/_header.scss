@@ -11,6 +11,10 @@
     }
     a{
 	color: #fff;
+	transition: all .2s linear;
+	@include hover-focus{
+	    opacity: .7;
+	}
     }
     .search{
 	.form-control{
@@ -28,6 +32,47 @@
 		width: 19px;
 		height: 19px;
 	    }
+	}
+    }
+    .products{
+	.icon{
+	    width: 20px;
+	    height: 14px;
+	    vertical-align: bottom;
+	    margin-left: 10px;
+	}
+    }
+    .main-menu{
+	li+li{
+	    margin-left: 30px;
+	}
+    }
+    .user-menu{
+	li+li{
+	    border-left: 1px solid #2f2f2f;
+	}
+	li{
+	    padding: 0 20px;
+	    a{
+		font-size: 14px;
+		padding: 5px 0 5px 35px;
+	    }
+	}
+	.i-order-status{
+	    background: url(../img/i-order-status.png) left center no-repeat;
+	    background-size: 25px 23px;
+	}
+	.i-sign-in{
+	    background: url(../img/i-sign-in.png) left 3px no-repeat;
+	    background-size: 24px 25px;
+	}
+	.i-faqs{
+	    background: url(../img/i-faqs.png) left center no-repeat;
+	    background-size: 26px;
+	}
+	.i-contact{
+	    background: url(../img/i-contact.png) left center no-repeat;
+	    background-size: 25px;
 	}
     }
 }
