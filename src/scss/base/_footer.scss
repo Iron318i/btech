@@ -2,6 +2,10 @@
     padding-top: 35px;
     background-color: $black;
     color: #fff;
+    hr{
+	margin: 0;
+	border-color: #323232;
+    }
 }
 .top-footer{
     margin-bottom: 30px;
@@ -31,8 +35,20 @@
     }
 }
 .bottom-footer{
-
-}
-.copy{
-    color: #a3a3a3;
+    align-items: center;
+    .copy{
+	color: $gray-500;
+	margin: 15px 0;
+    }
+    .social{
+	margin: 15px 0;
+	li+li{
+	    margin-left: 8px;
+	}
+	.icon{
+	    color: $gray-500;
+	    width: rem(24px);
+	    height: rem(24px);
+	}
+    }
 }
