@@ -198,3 +198,20 @@ img{
 	max-width: 35%;
     }
 }
+.gray-info-boxes{
+    background: $gray-700;
+    padding: 4rem 0;
+    color: $gray-500;
+    text-align: center;
+    font-weight: 300;
+    h2{
+	font-size: rem(22px);
+	color: #fff;
+    }
+    .row{
+	justify-content: space-around;
+    }
+    img{
+	margin-bottom: 1rem;
+    }
+}
