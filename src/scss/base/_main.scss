@@ -24,6 +24,22 @@
 	}
     }
 }
+.btn-add-more{
+    text-transform: none;
+    padding-left: 0;
+    font-size: rem(12px);
+    .icon{
+	color: #999;
+	width: 26px;
+	height: 26px;
+	margin-right: 1rem;
+    }
+    &:hover{
+	.icon{
+	    color: $gray-600;
+	}
+    }
+}
 .form-text{
     font-size: 12px;
     a{
