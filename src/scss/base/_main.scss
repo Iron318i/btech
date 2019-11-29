@@ -13,6 +13,9 @@
 .fsz-14{
     font-size: rem(14px);
 }
+.fsz-16{
+    font-size: rem(16px);
+}
 .btn{
     text-transform: uppercase;
 }
@@ -219,5 +222,18 @@ img{
     }
     img{
 	margin-bottom: 1rem;
+    }
+}
+.order-item{
+    .order-img{
+	max-width: 85px;
+    }
+    .order-info{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	.title{
+	    font-weight: 300;
+	}
     }
 }
