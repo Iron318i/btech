@@ -40,3 +40,18 @@
 	font-size: 1.2rem;
     }
 }
+@media(max-width: 374px){
+    .btn-group-lg>.btn, .btn-lg {
+	font-size: 1.2rem;
+    }
+    .h1, .h2, h1, h2 {
+	font-size: 1.5rem;
+    }
+    .payment-options .payment>* {
+	padding-left: 5px;
+	padding-right: 5px;
+    }
+    .card-body {
+	padding: .6rem;
+    }
+}
