@@ -8,6 +8,9 @@
 	    padding-right: 50px;
 	}
     }
+    .card-body{
+	padding: 20px 30px;
+    }
 }
 @include media-breakpoint-down(sm) {
     .page-header .h1 {
