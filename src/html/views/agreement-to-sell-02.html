@@ -3,8 +3,43 @@ title: "Agreement to sell - step 2 | Btech",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
-<div class="page-header bg-1">
-    <h1 class="h1"></h1>
+<div class="page-header bg-2">
+    <div class="agreement-progress container">
+	<div class="row">
+	    <div class="col current">
+		<div class="heading">Your details</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#indicator-minus"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col">
+		<div class="heading">Your payment</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#indicator-minus"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col">
+		<div class="heading">Confirm order</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#indicator-minus"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col">
+		<div class="heading">Order complete</div>
+		<div class="graph">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#indicator-minus"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
 </div>
 <section class="section container">
     <form>
@@ -89,7 +124,7 @@ title: "Agreement to sell - step 2 | Btech",
 			    </div>
 			</div>
 		    </div>
-		       <button type="button" class="btn btn-close"><svg class="icon"><use xlink:href="#delete-button"></use></svg></button>
+		    <button type="button" class="btn btn-close"><svg class="icon"><use xlink:href="#delete-button"></use></svg></button>
 		</div>
 		<div class="form-group">
 		    <button type="button" class="btn btn-link btn-add-more"><svg class="icon"><use xlink:href="#plus"></use></svg>Add more gadgets</button>

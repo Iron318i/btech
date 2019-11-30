@@ -273,3 +273,62 @@ img{
 	box-shadow: none;
     }
 }
+.agreement-progress{
+    color: #fff;
+    text-align: center;
+    max-width: 980px;
+    .heading{
+	font-weight: 300;
+    }
+    .graph{
+	position: relative;
+	padding: 1rem 0;
+    }
+    .line:after{
+	content: '';
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	height: 6px;
+	background-color: $gray-600;
+	z-index: 1;
+    }
+    .indicator{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	width: 53px;
+	height: 53px;
+	border-radius: 50%;
+	background-color: $gray-600;
+	z-index: 2;
+	.icon{
+	    color: #2e2d2f;
+	    width: 30px;
+	    height: 30px;
+	}
+    }
+    .done{
+	.indicator{
+	    background-color: $white;
+	}
+	.line:after{
+	    background-color: #fff;
+	}
+	.icon{
+	    width: 40px;
+	    height: 32px;
+	}
+    }
+    .current{
+	.indicator{
+	    background-color: $gray-400;
+	}
+    }
+
+}
