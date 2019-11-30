@@ -339,4 +339,16 @@ img{
 .your-payment-box{
     background-color: #f3f3f3;
     padding: $card-spacer-x;
+    margin-bottom: 1.5rem;
+    .secure-heading{
+	text-align: center;
+	font-size: rem(16px);
+	line-height: 1.7;
+	font-weight: 300;
+	.icon{
+	    width: 27px;
+	    height: 27px;
+	    vertical-align: sub;
+	}
+    }
 }
