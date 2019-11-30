@@ -1,11 +1,65 @@
 <% var data = {
-  title: "Agreement to sell - step 1 | Btech",
+title: "Agreement to sell - step 1 | Btech",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
-
-<section class="section container">
-    
+<div class="page-header bg-2">
+    <div class="agreement-progress container">
+	<div class="row">
+	    <div class="col done">
+		<div class="heading">Your<br> details</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col done">
+		<div class="heading">Your<br> payment</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col done">
+		<div class="heading">Confirm<br> order</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col done">
+		<div class="heading">Order<br> complete</div>
+		<div class="graph">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+<section class="section">
+    <div class="container card card-body px-xl-4">
+	<h1 class="h1">Order complete</h1>
+	<p class="fsz-14"><strong>Thank you for choosing bTech Market. We have sent you an email to confirm your order</strong></p>
+	<p class="text-secondary mb-3">Your order reference number is 5002393. Keep this safe as you`ll need to quote it in all communications with us.</p>
+	<h2 class="h2">What happens next?</h2>
+	<p class="text-secondary">If your Apple device runs iOS 7 or later it is vital that the iCloud account is removed before sending to us. If it`s an Android device remove all associated <br>Google ID and Manufacturer (e.g Samsung) accounts.</p>
+	<ul class="nav flex-column">
+	    <li class="my-2"><strong>1.</strong> Sed posuere quam lacinia vehicula vulputate. Mauris in convallis massa. </li>
+	    <li class="my-2"><strong>2.</strong> Praesent nulla urna, interdum ut est et, placerat laoreet leo.</li>
+	    <li class="my-2"><strong>3.</strong> Aenean eget dui nisl. Fusce sollicitudin dui metus, a vestibulum ipsum auctor id. </li>
+	</ul>
+	<p class="text-secondary">Morbi sed dui a ipsum vestibulum venenatis. Nam ullamcorper nisi sed accumsan consequat. Mauris ut erat purus. Sed pellentesque rhoncus risus, sit amet lacinia orci porta sit amet. Nullam id est eget elit gravida dapibus in sed elit. Suspendisse sem turpis, iaculis nec tincidunt eu, fermentum nec est. Suspendisse interdum at ipsum vel consectetur. Aenean ipsum est, aliquet id lorem semper, ullamcorper lacinia ligula. Phasellus imperdiet nibh nec dapibus rhoncus. Sed convallis tempor nisl eu elementum. Quisque rutrum metus sed sapien vestibulum viverra.</p>
+	<p class="text-secondary mb-4">Sed tortor enim, sagittis at scelerisque non, pharetra viverra ipsum. Pellentesque congue et justo ac vulputate. Nam eu imperdiet nisi, id cursus dolor. Pellentesque egestas malesuada eros, ut mattis sapien hendrerit maximus. Donec interdum massa id nulla bibendum, eget ultrices neque vestibulum. Sed ultricies, felis a fringilla tempus, ipsum ex vulputate eros, vitae dignissim enim ex id dolor. Suspendisse mi ex, tempus vitae turpis at, blandit fermentum mauris. Phasellus quam mauris, efficitur ut elit eu, auctor tristique leo. Curabitur dictum turpis in rutrum dapibus. Nunc ac sollicitudin nunc. Aenean elementum placerat venenatis. Mauris a condimentum nisi. Proin iaculis efficitur tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar tempus quam non vestibulum. Aenean mollis lacinia mauris, vitae tristique dolor facilisis eget.</p>
+	<div class="alert alert-primary px-xl-3" role="alert">
+	    <h3 class="h2">Please remember:</h3>
+	    <p>Morbi sed dui a ipsum vestibulum venenatis. Nam ullamcorper nisi sed accumsan consequat. Mauris ut erat purus. Sed pellentesque rhoncus risus, sit amet lacinia orci porta sit amet. Nullam id est eget elit gravida dapibus in sed elit. Suspendisse sem turpis, iaculis nec tincidunt eu, fermentum nec est. Suspendisse interdum at ipsum vel consectetur. Aenean ipsum est, aliquet id lorem semper, ullamcorper lacinia ligula. Phasellus imperdiet nibh nec dapibus rhoncus. Sed convallis tempor nisl eu elementum. Quisque rutrum metus sed sapien vestibulum viverra.</p>
+	</div>
+    </div>
 </section>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
