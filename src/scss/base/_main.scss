@@ -152,6 +152,11 @@ img{
 	background: #393839 url(../img/page-header-bg-1.jpg) 50% no-repeat;
 	background-size: cover;
     }
+    &.bg-2{
+	padding: rem(26px 0);
+	background: #393839 url(../img/page-header-bg-2.jpg) 50% no-repeat;
+	background-size: cover;
+    }
 }
 /*How you want to be Paid*/
 .payment-options{
