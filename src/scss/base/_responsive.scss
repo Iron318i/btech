@@ -12,6 +12,35 @@
 	padding: 20px 30px;
     }
 }
+@include media-breakpoint-up(sm) {
+    .page-header{
+	&.bg-2{
+	    padding: rem(26px 0);
+	}
+    }
+    .agreement-progress{
+	.heading br{
+	    display: none;
+	}
+	.line:after{
+	    height: 6px;
+	}
+	.indicator {
+	    width: 53px;
+	    height: 53px;
+	    .icon{
+		width: 30px;
+		height: 30px;
+	    }
+	}
+	.done{
+	    .icon{
+		width: 40px;
+		height: 32px;
+	    }
+	}
+    }
+}
 @include media-breakpoint-up(lg) {
     .payment-options{
 	.amount {
@@ -39,6 +68,12 @@
 @include media-breakpoint-down(sm) {
     .page-header .h1 {
 	font-size: 1.2rem;
+    }
+}
+@media(max-width: 479px){
+    .btn-close {
+	right: 2px;
+	top: 2px;
     }
 }
 @media(max-width: 374px){
