@@ -1,11 +1,144 @@
 <% var data = {
-  title: "Agreement to sell - step 1 | Btech",
+title: "Agreement to sell - step 4 | Btech",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
-
-<section class="section container">
-    
+<div class="page-header bg-2">
+    <div class="agreement-progress container">
+	<div class="row">
+	    <div class="col done">
+		<div class="heading">Your<br> details</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col done">
+		<div class="heading">Your<br> payment</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col current">
+		<div class="heading">Confirm<br> order</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#indicator-minus"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col">
+		<div class="heading">Order<br> complete</div>
+		<div class="graph">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="#indicator-minus"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+<section class="section">
+    <div class="container card card-body px-xl-4">
+	<h2 class="h2">Confirm order</h2>
+	<div class="row row-100">
+	    <div class="col-md-6">
+		<div class="oder-heading">
+		    <h3 class="heading">Email details</h3>
+		    <button type="button" class="btn btn-edit">Edit</button>
+		</div>
+		<div class="oder-data">
+		    <div class="row">
+			<div class="col-4">Email:</div>
+			<div class="col-8">johndoe@gmail.com</div>
+		    </div>
+		</div>
+		<div class="oder-heading">
+		    <h3 class="heading">Your details</h3>
+		    <button type="button" class="btn btn-edit">Edit</button>
+		</div>
+		<div class="oder-data">
+		    <div class="row">
+			<div class="col-4">Title:</div>
+			<div class="col-8">Mr</div>
+		    </div>
+		    <div class="row">
+			<div class="col-4">First name:</div>
+			<div class="col-8">John</div>
+		    </div>
+		    <div class="row">
+			<div class="col-4">Last name:</div>
+			<div class="col-8">Doe</div>
+		    </div>
+		    <div class="row">
+			<div class="col-4">Mobile:</div>
+			<div class="col-8">8029 00000000</div>
+		    </div>
+		    <div class="row">
+			<div class="col-4">Address:</div>
+			<div class="col-8">South street, 34A, 8 Toronto</div>
+		    </div>
+		    <div class="row">
+			<div class="col-4">Postcode:</div>
+			<div class="col-8">000000</div>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-md-6">
+		<div class="oder-heading">
+		    <h3 class="heading">Order Summary</h3>
+		    <button type="button" class="btn btn-edit">Edit</button>
+		</div>
+		<div class="oder-summary">
+		    <div class="row">
+			<div class="col-8 product">2 Apple iPhone 7 32GB</div>
+			<div class="col-4 price">$90.00</div>
+		    </div>
+		    <div class="total">TOTAL: <strong>$380.99</strong></div>
+		</div>
+		<div class="oder-heading">
+		    <h3 class="heading">Shipping your Device</h3>
+		    <button type="button" class="btn btn-edit">Edit</button>
+		</div>
+		<p>We will mail you a prepaid shipping label and a packaging box to ship<br> your device</p>
+	    </div>
+	</div>
+	<div class="oder-heading">
+	    <h3 class="heading">Shipping your Device</h3>
+	    <button type="button" class="btn btn-edit">Edit</button>
+	</div>
+	<div class="row row-100">
+	    <div class="col-md-6">
+		<p>You have chosen PayPal</p>
+		<p><img src="/img/pay-pal-159x41.png" srcset="/img/retina/pay-pal-159x41-2x.png 2x" alt="PayPal"></p>
+		<p class="mb-4">Please ensure your PayPal email address is entered correctly before continuing.</p>
+		<p class="fsz-14 font-weight-bold">Terms and Conditions:</p>
+		<p>bTech Market need your registration details to process your order.</p>
+		<div class="form-group">
+		    <div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="terms-check">
+			<label class="custom-control-label text-black-50 fsz-12" for="terms-check">I have read and understood the <a href="#">terms and conditions.</a></label>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-md-6">
+		<p class="fsz-14 font-weight-bold">Contact permission:</p>
+		<p class="mb-3">W`ed love to send you exclusive offers and the latest info from bTech<br> Market by email.</p>
+		<div class="form-group">
+		    <div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="privacy-check">
+			<label class="custom-control-label text-black-50 fsz-12" for="privacy-check">Yes please, I`d like to hear about offers and services. You can <br>unsubscribe at any time. To learn more please read our <a href="#">privacy policy.</a></label>
+		    </div>
+		</div>
+		<div class="mt-5">
+		    <button type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+		</div>
+	    </div>
+	</div>
+    </div>
 </section>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

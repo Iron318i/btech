@@ -10,6 +10,9 @@
 	font-weight: 300;
     }
 }
+.fsz-12{
+    font-size: rem(12px);
+}
 .fsz-14{
     font-size: rem(14px);
 }
@@ -63,6 +66,9 @@ input[type=number]{
 }
 .custom-control-label{
     font-weight: 400;
+    a{
+	text-decoration: underline;
+    }
 }
 select{
     &.form-control{
@@ -350,5 +356,48 @@ img{
 	    height: 27px;
 	    vertical-align: sub;
 	}
+    }
+}
+.oder-heading{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray-200;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    .heading{
+	margin-bottom: 0;
+	font-size: rem(14px);
+	font-weight: 700;
+    }
+    .btn-edit{
+	text-transform: none;
+	color:  $gray-600;
+	padding: 0;
+	@include hover-focus{
+	    color: $black;
+	}
+    }
+}
+.oder-data{
+    margin-bottom: 2rem;
+    .row{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+    }
+    .col-4{
+	color: $gray-500;
+    }
+}
+.oder-summary{
+    margin-bottom: 2rem;
+    .price{
+	text-align: right;
+	font-size: rem(15px);
+    }
+    .total{
+	margin-top: 1rem;
+	text-align: right;
+	font-size: rem(15px);
     }
 }
