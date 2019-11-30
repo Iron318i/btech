@@ -91,7 +91,7 @@ $input-btn-padding-x-lg: 1rem;
 $label-margin-bottom: 1rem;
 
 $input-border-color: $gray-200;
-
+$input-font-size:  rem(13px);
 $input-font-size-lg: rem(13px);
 
 $input-border-radius:  0;
@@ -105,6 +105,8 @@ $form-text-margin-top: rem(20px);
 
 $custom-checkbox-indicator-border-radius: 0;
 $custom-control-indicator-size: rem(20px);
+
+$custom-control-indicator-border-color: $input-border-color;
 // Dropdowns
 // Z-index master list
 // Navs
