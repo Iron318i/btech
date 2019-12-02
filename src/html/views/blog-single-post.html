@@ -1,0 +1,155 @@
+<% var data = {
+title: "Post | Btech",
+}; %>
+<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<section class="section container py-5">
+    <h1 class="h1">Blog</h1>
+    <div class="row">
+	<div class="col-lg-9 col-md-8">
+	    <!-- post 1 -->
+	    <article class="post single-post">
+		<div class="post-content">
+		    <h2 class="single-title">Lorem ipsum dolor sit amet, consectetur<br class="d-sm-block d-none"> adipiscing elit. </h2>
+		    <div class="meta">
+			<div class="avatar">
+			    <img src="/uploads/john-doe-avatar.png" alt="JOHN DOE">
+			</div>
+			<a href="#" class="author">JOHN DOE</a>
+			<div class="date">OCTOBER 22</div>
+			<div class="comments"><a href="#comments">0 <svg class="icon"><use xlink:href="#comments"></use></svg></a></div>
+		    </div>
+		    <div class="post-img">
+			<img src="/uploads/post-1-841x337.jpg" alt="post-1">
+		    </div>
+		    <p class="fsz-16 font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		    <p class="font-italic fsz-14">Donec est arcu, rutrum a ultricies eget, feugiat blandit quam. Sed lacinia est ante, hendrerit viverra quam lacinia ut. Praesent vel vehicula nisi. Ut iaculis posuere tortor, vel pellentesque nisi pellentesque vitae. Phasellus vitae placerat diam. Etiam sed cursus sapien. Pellentesque vitae viverra ipsum. Sed vulputate quam nec faucibus vulputate. Nunc lacus nibh, molestie a sapien quis, posuere lacinia lorem. Donec aliquam consequat risus vitae ultrices.</p>
+		    <ul class="nav flex-column fsz-14">
+			<li class="my-2"><strong>1.</strong> <span class="font-italic text-black-50">Cras enim ante, malesuada a tortor facilisis, viverra aliquet ligula.</span></li>
+			<li class="my-2"><strong>2.</strong> <span class="font-italic text-black-50">Integer semper elit sit amet sem iaculis placerat. Duis nec facilisis leo.</span></li>
+			<li class="my-2"><strong>3.</strong> <span class="font-italic text-black-50">Nam ultrices dolor ut magna condimentum sodales. Aliquam dictum</span></li>
+			<li class="my-2"><strong>4.</strong> <span class="font-italic text-black-50">lacus eu maximus posuere. Nam sollicitudin euismod fringilla.</span></li>
+		    </ul>
+		    <p class="text-black-50">Donec a convallis lacus. Aenean sit amet massa id justo molestie eleifend a tempus dui. Sed elementum auctor placerat. Sed ullamcorper, ex at hendrerit vulputate, sapien quam laoreet tortor, ut iaculis massa magna a lacus. Etiam tristique, arcu sed semper pulvinar, velit est commodo dui, quis sagittis libero sapien a odio. Nulla sodales risus nisl, sed eleifend lacus sodales nec. Integer pulvinar in est et cursus. Praesent sollicitudin ligula nibh.</p>
+		    <p class="text-black-50">Donec accumsan sapien at ex lobortis volutpat. Vestibulum dictum rhoncus ultrices. Etiam non dolor eget ligula aliquam sodales ac vel libero. Cras nec turpis velit. Ut a sapien eget felis vehicula suscipit. Nullam quis eros leo. Nulla sagittis lectus in dolor lobortis mattis. Proin vitae turpis non lacus lobortis faucibus eu vel enim. Sed feugiat tellus vitae magna consectetur iaculis. Maecenas dignissim eu dui sed pharetra.</p>
+		    <p class="text-black-50">Donec neque augue, placerat vitae egestas vitae, interdum ac nibh. Maecenas velit est, sollicitudin nec libero id, dignissim viverra leo. Integer consequat leo tempor rutrum sodales. Phasellus accumsan euismod tellus, sit amet pretium diam fermentum in. ItalicItalic</p>
+		     <p class="font-italic fsz-14">Donec est arcu, rutrum a ultricies eget, feugiat blandit quam. Sed lacinia est ante, hendrerit viverra quam lacinia ut. Praesent vel vehicula nisi. Ut iaculis posuere tortor, vel pellentesque nisi pellentesque vitae. Phasellus vitae placerat diam. Etiam sed cursus sapien. Pellentesque vitae viverra ipsum. Sed vulputate quam nec faucibus vulputate. Nunc lacus nibh, molestie a sapien quis, posuere lacinia lorem. Donec aliquam consequat risus vitae ultrices.</p>
+		    <div class="post-footer">
+			<div class="social">
+			    <ul class="nav">
+				<li><a href="#"><svg class="icon"><use xlink:href="#facebook-logo"></use></svg></a></li>
+				<li><a href="#"><svg class="icon"><use xlink:href="#google-logo"></use></svg></a></li>
+				<li><a href="#"><svg class="icon"><use xlink:href="#instagram-logo"></use></svg></a></li>
+				<li><a href="#"><svg class="icon"><use xlink:href="#linked-logo"></use></svg></a></li>
+				<li><a href="#"><svg class="icon"><use xlink:href="#pinterest-logo"></use></svg></a></li>
+			    </ul>
+			</div>
+			<div class="info">
+			    <ul class="nav">
+				<li class="likes"><a href="#">12 <svg class="icon"><use xlink:href="#heart"></use></svg></a></li>
+			    </ul>
+			</div>
+		    </div>
+		</div>
+	    </article>
+	</div>
+	<div class="col-lg-3 col-md-4 sidebar">
+	    <div class="widget">
+		<div class="card card-body text-center">
+		    <h3 class="widget-title">Newsletter</h3>
+		    <p>Fill your email below to <br>subscribe to my newsletter</p>
+		    <div class="form-group">
+			<input class="form-control form-control-lg" type="email">
+		    </div>
+		    <div class="form-group">
+			<button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
+		    </div>
+		    <h3 class="widget-title mt-2">Follow us</h3>
+		    <div class="social mb-2">
+			<ul class="nav justify-content-center">
+			    <li><a href="#"><svg class="icon"><use xlink:href="#facebook-logo"></use></svg></a></li>
+			    <li><a href="#"><svg class="icon"><use xlink:href="#google-logo"></use></svg></a></li>
+			    <li><a href="#"><svg class="icon"><use xlink:href="#instagram-logo"></use></svg></a></li>
+			    <li><a href="#"><svg class="icon"><use xlink:href="#linked-logo"></use></svg></a></li>
+			    <li><a href="#"><svg class="icon"><use xlink:href="#pinterest-logo"></use></svg></a></li>
+			</ul>
+		    </div>
+		</div>
+	    </div>
+	    <div class="widget">
+		<h3 class="widget-title mt-2">Popular postss</h3>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-1-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-2-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-3-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-4-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+	    </div>
+	    <div class="widget">
+		<h3 class="widget-title">Category</h3>
+		<ul class="nav widget-categories">
+		    <li><a href="#">Donec accumssafsdan sapien.</a></li>
+		    <li><a href="#">Accumssafsdan sapien.</a></li>
+		    <li><a href="#">Donec accumssafsdan sapien.</a></li>
+		    <li><a href="#">Accumssafsdan sapien.</a></li>
+		    <li><a href="#">Donec accumssafsdan sapien.</a></li>
+		</ul>
+	    </div>
+	    <div class="widget">
+		<h3 class="widget-title">Recent posts</h3>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-5-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-6-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-7-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+		<div class="post-preview">
+		    <div class="img"><img src="/uploads/post-preview-8-96x96.jpg" alt="post"></div>
+		    <div class="content">
+			<h5 class="title">Nulla sodales risus nil, sed eleifend lacus sodales nec.</h5>
+			<div class="meta"><a href="#">John Doe</a> | October 22</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>

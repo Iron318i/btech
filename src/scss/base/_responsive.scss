@@ -26,6 +26,11 @@
     .post-content{
 	padding: 2rem;
     }
+    .single-post{
+	.post-img{
+	    margin: 1rem -2rem;
+	}
+    }
 }
 @include media-breakpoint-up(sm) {
     .page-header{
