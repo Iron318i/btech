@@ -519,3 +519,14 @@ img{
 	}
     }
 }
+.pagination{
+    justify-content: center;
+    .page-item{
+	margin:0 3px;
+	.page-link{
+	    border-radius: 0;
+	    min-width: rem(31px);
+	    text-align: center;
+	}
+    }
+}
