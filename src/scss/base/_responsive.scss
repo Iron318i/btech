@@ -66,8 +66,7 @@
     }
 }
 @include media-breakpoint-down(sm) {
-    .col-md-4 + .col-md-4,
-    .col-md-6 + .col-md-6{
+    [class*="col-md-"] + [class*="col-md-"]{
 	margin-top: 2rem;
     }
 }
