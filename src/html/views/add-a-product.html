@@ -1,0 +1,165 @@
+<% var data = {
+title: "Add a product | Btech",
+}; %>
+<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<section class="section container">
+    <form>
+	<h1 class="h4">Add a product</h1>
+	<div class="row row-100">
+	    <div class="col-md-6">
+		<div class="form-group">
+		    <label>Category</label>
+		    <select class="form-control form-control-lg">
+			<option>Please choose</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+		    </select>
+		</div>
+		<div class="form-group">
+		    <label>Model</label>
+		    <select class="form-control form-control-lg">
+			<option>Please choose</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+		    </select>
+		</div>
+		<div class="form-group">
+		    <label>Storage (GB)</label>
+		    <select class="form-control form-control-lg">
+			<option>Please choose</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+		    </select>
+		</div>
+		<div class="form-group">
+		    <label>Locked or Unlocked</label>
+		    <select class="form-control form-control-lg">
+			<option>Please choose</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+			<option>Device Type</option>
+		    </select>
+		</div>
+		<div class="form-group">
+		    <label>IMEI Number</label>
+		    <input type="text" class="form-control form-control-lg" placeholder="000000000000000">
+		</div>
+		<div class="form-group">
+		    <label>LOCKED TO:</label>
+		    <div class="form-row">
+			<div class="col-4 col-lg-5-12">
+			    <div class="form-card">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="rogers-check">
+				    <label class="custom-control-label" for="rogers-check"><img src="/img/networks/network-rogers.png" srcset="/img/networks/network-rogers@2x.png 2x" alt="rogers"></label>
+				</div>
+			    </div>
+			</div>
+			<div class="col-4 col-lg-5-12">
+			    <div class="form-card">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="bell-check">
+				    <label class="custom-control-label" for="bell-check"><img src="/img/networks/network-bell.png" srcset="/img/networks/network-bell@2x.png 2x" alt="Bell"></label>
+				</div>
+			    </div>
+			</div>
+			<div class="col-4 col-lg-5-12">
+			    <div class="form-card">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="telus-check">
+				    <label class="custom-control-label" for="telus-check"><img src="/img/networks/network-telus.png" srcset="/img/networks/network-telus@2x.png 2x" alt="telus"></label>
+				</div>
+			    </div>
+			</div>
+			<div class="col-4 col-lg-5-12">
+			    <div class="form-card">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="fido-check">
+				    <label class="custom-control-label" for="fido-check"><img src="/img/networks/network-fido.png" srcset="/img/networks/network-fido@2x.png 2x" alt="fido"></label>
+				</div>
+			    </div>
+			</div>
+			<div class="col-4 col-lg-5-12">
+			    <div class="form-card">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="koodo-check">
+				    <label class="custom-control-label" for="koodo-check"><img src="/img/networks/network-koodo.png" srcset="/img/networks/network-koodo@2x.png 2x" alt="koodo"></label>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <label>Color</label>
+		    <div class="form-inline">
+			<div class="custom-control custom-checkbox vertical-center mr-3">
+			    <input type="checkbox" class="custom-control-input" id="color-black-check">
+			    <label class="custom-control-label" for="color-black-check"><img src="/img/color-black.png" srcset="/img/retina/color-black-2x.png 2x" alt="color-black"></label>
+			</div>
+			<div class="custom-control custom-checkbox vertical-center mr-3">
+			    <input type="checkbox" class="custom-control-input" id="color-gray-check">
+			    <label class="custom-control-label" for="color-gray-check"><img src="/img/color-gray.png" srcset="/img/retina/color-gray-2x.png 2x" alt="color-gray"></label>
+			</div>
+			<div class="custom-control custom-checkbox vertical-center">
+			    <input type="checkbox" class="custom-control-input" id="color-beige-check">
+			    <label class="custom-control-label" for="color-beige-check"><img src="/img/color-beige.png" srcset="/img/retina/color-beige-2x.png 2x" alt="color-beige"></label>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-md-6">
+		<div class="form-group">
+		    <label>Warranty</label>
+		    <div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="warranty-check">
+			<label class="custom-control-label" for="warranty-check">12 months warranty</label>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <div class="form-row">
+			<div class="col-lg-4">
+			    <div class="form-card p-2">
+				<div class="custom-control custom-radio custom-control-inline">
+				    <input type="radio" id="radio-warranty-refurbished" name="radio-warranty" class="custom-control-input">
+				    <label class="custom-control-label" for="radio-warranty-refurbished">Refurbished</label>
+				</div>
+			    </div>
+			</div>
+			<div class="col-lg-4">
+			    <div class="form-card p-2">
+				<div class="custom-control custom-radio custom-control-inline">
+				    <input type="radio" id="radio-warranty-grade-a" name="radio-warranty" class="custom-control-input">
+				    <label class="custom-control-label" for="radio-warranty-grade-a">Grade A</label>
+				</div>
+			    </div>
+			</div>
+			<div class="col-lg-4">
+			    <div class="form-card p-2">
+				<div class="custom-control custom-radio custom-control-inline">
+				    <input type="radio" id="radio-warranty-grade-b" name="radio-warranty" class="custom-control-input">
+				    <label class="custom-control-label" for="radio-warranty-grade-b">Grade B</label>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <label>List Price</label>
+		    <input type="text" class="form-control form-control-lg" placeholder="0.00">
+		</div>
+		<div class="form-group mt-5">
+		    <button type="button" class="btn btn-primary btn-lg btn-block">ADD PRODUCT</button>
+		</div>
+	    </div>
+	</div>
+    </form>
+</section>
+<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>

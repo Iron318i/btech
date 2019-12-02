@@ -79,6 +79,18 @@ input[type=number]{
 	text-decoration: underline;
     }
 }
+.vertical-center .custom-control-label{
+    &:after, &:before{
+	top: 50%;
+	transform: translateY(-50%);
+    }
+}
+.custom-radio{
+    .custom-control-label:before{
+	background-color: #f3f3f3;
+	border-color: #a1a1a1;
+    }
+}
 select{
     &.form-control{
 	appearance: none;
@@ -142,6 +154,12 @@ select{
 	& input:valid + .placeholder {
 	display: none;
     }
+}
+.form-card{
+    background-color: #fff;
+    padding: 8px;
+    border: $input-border-width solid $input-border-color;
+    border-radius: 3px;
 }
 img{
     max-width: 100%;
