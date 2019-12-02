@@ -23,6 +23,9 @@
 	flex: 0 0 20%;
 	min-width: 20%;
     }
+    .post-content{
+	padding: 2rem;
+    }
 }
 @include media-breakpoint-up(sm) {
     .page-header{
