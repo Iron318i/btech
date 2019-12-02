@@ -8,6 +8,15 @@
 	    padding-right: 50px;
 	}
     }
+    .row-35{
+	margin-left: -18px;
+	margin-right: -18px;
+	> .col,
+	> [class*="col-"] {
+	    padding-left: 18px;
+	    padding-right: 18px;
+	}
+    }
 }
 @include media-breakpoint-up(sm) {
     .page-header{

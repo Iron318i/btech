@@ -10,6 +10,9 @@
 	font-weight: 300;
     }
 }
+.fsz-11{
+    font-size: rem(11px);
+}
 .fsz-12{
     font-size: rem(12px);
 }
@@ -19,8 +22,14 @@
 .fsz-16{
     font-size: rem(16px);
 }
+.fsz-18{
+    font-size: rem(18px);
+}
 .btn{
     text-transform: uppercase;
+}
+.btn-lg{
+    min-width: rem(220px);
 }
 .btn-outline-info {
     text-transform: none;
@@ -409,5 +418,22 @@ img{
 	margin-top: 1rem;
 	text-align: right;
 	font-size: rem(15px);
+    }
+}
+/***/
+.customer-service-sidebar{
+    .sidebar-title{
+	font-size: rem(14px);
+	font-weight: 700;
+	text-transform: uppercase;
+    }
+    .nav {
+	li{
+	    margin-bottom: 1rem;
+	}
+	a{
+	    text-decoration: underline;
+	    color: #999;
+	}
     }
 }
