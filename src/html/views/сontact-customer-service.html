@@ -1,0 +1,57 @@
+<% var data = {
+title: "Contact customer service | Btech",
+}; %>
+<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<div class="page-header">
+    <h1 class="h1">Contact customer service</h1>
+</div>
+<section class="section container">
+    <div class="row">
+	<div class="col-md-8">
+	    <form>
+		<div class="form-group">
+		    <label class="fsz-14">Hi! How can we help? <span class="font-weight-normal">(required)</span></label>
+		    <select class="form-control form-control-lg">
+			<option>I`m having trouble </option>
+			<option>I`m having trouble </option>
+			<option>I`m having trouble </option>
+			<option>I`m having trouble </option>
+			<option>I`m having trouble </option>
+		    </select>
+		</div>
+		<div class="form-group">
+		    <label class="fsz-14">Whitch bTech Market isn`t working <span class="font-weight-normal">(required)</span></label>
+		    <span class="form-text text-muted mt-0 mb-2">By selecting a bTech Market, we`ll be able to get back to you with a better and faster response</span>
+		    <select class="form-control form-control-lg">
+			<option></option>
+			<option>option</option>
+			<option>option</option>
+			<option>option</option>
+			<option>option</option>
+		    </select>
+		</div>
+		<div class="form-group">
+		    <label class="fsz-14">Whitch bTech Market isn`t working <span class="font-weight-normal">(required)</span></label>
+		    <span class="form-text text-muted mt-0 mb-2">What a happening?<br> What do you expect to happen?<br> What was the last thing you did before the issue happened?</span>
+		    <textarea rows="8" class="form-control"></textarea>
+		</div>
+		<div class="form-group">
+		    <label class="fsz-14">Is there an example that illustrates the problem? <span class="font-weight-normal">(required)</span></label>
+		    <span class="form-text text-muted mt-0 mb-2">1. Find the example in your task history.<br> 2. Copy the URL from the specific task.<br> 3.Paste the URL below.</span>
+		    <input type="text" class="form-control form-control-lg">
+		</div>
+		<div class="form-group">
+		    <label class="fsz-14">Please include a screenshot (or video) of the issue if applicable <span class="font-weight-normal">(required)</span></label>
+		    <span class="form-text text-muted mt-0 mb-2">Screenshots or videos are the best way to show us exactly what is going on. You can use a service like Imgur to upload images,<br> or like Jing to share videos. You can also upload image files below.</span>
+		    <input type="text" class="form-control form-control-lg">
+		</div>
+	    </form>
+	</div>
+	<div class="col-md-4">
+	   
+	</div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>
