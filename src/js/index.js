@@ -1,6 +1,7 @@
 import jQuery from "jquery";
 import popper from "popper.js";
 import bootstrap from "bootstrap";
+import dropzone from "dropzone";
 //import bootstrap-touchspin from "bootstrap-touchspin";
 
 var SameHeight = require('same-height');

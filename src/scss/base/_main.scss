@@ -138,6 +138,16 @@ img{
     max-width: 100%;
     height: auto;
 }
+/*dropzone*/
+.dropzone{
+    background: transparent;
+    border: 1px dashed #6c6c6c;
+    .dz-message {
+	color: #c6c6c6;
+	font-size: 14px;
+	font-weight: 700;
+    }
+}
 /*Sections*/
 .section{
     padding-top: 18px;
