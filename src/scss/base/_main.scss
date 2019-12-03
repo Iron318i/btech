@@ -687,3 +687,25 @@ img{
 	background-color: #fbfbfb;
     }
 }
+.faq-menu{
+    .menu-item{
+	display: flex;
+	margin-bottom: 2rem;
+	.img{
+	    flex: 0 0 50px;
+	    padding-right: 10px;
+	}
+	.heading{
+	    display: block;
+	    font-size: rem(14px);
+	    font-weight: 700;
+	    color: #000;
+	    margin-bottom: .2rem;
+	}
+	.description{
+	    font-size: 11px;
+	    line-height: 1;
+	    color: #666;
+	}
+    }
+}
