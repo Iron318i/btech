@@ -40,7 +40,7 @@ SameHeight.init('.device-tmpl-1 .device-link');
 		items: 1,
 		nav: false,
 		dots: true,
-		margin: 0
+		margin: 5
 	    },
 	    480: {
 		items: 2,
