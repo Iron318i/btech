@@ -6,6 +6,10 @@ import dropzone from "dropzone";
 
 var SameHeight = require('same-height');
 SameHeight.init('.same-height-md', "screen and (min-width: 768px)");
+/*device-tmpl-1*/
+SameHeight.init('.device-tmpl-1 .device-title');
+SameHeight.init('.device-tmpl-1 .device-img');
+SameHeight.init('.device-tmpl-1 .device-link');
 
 +function ($) {
 // How you want to be Paid temporary script

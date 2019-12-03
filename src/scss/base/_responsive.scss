@@ -80,7 +80,7 @@
     }
 }
 @include media-breakpoint-down(sm) {
-    [class*="col-md-"] + [class*="col-md-"]{
+    [class*="col-md-"] + [class*="col-md-"]:not(.col-6){
 	margin-top: 2rem;
     }
     .page-header .h1 {

@@ -643,7 +643,8 @@ img{
 .header-search{
     color: #fff;
     max-width: 815px;
-    padding: 1.5rem 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     .heading{
 	text-transform: uppercase;
 	font-size: rem(22px);
@@ -725,6 +726,28 @@ img{
 	    font-size: 11px;
 	    line-height: 1;
 	    color: #666;
+	}
+    }
+}
+/**/
+.device-tmpl-1{
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    .device-title{
+	font-size: rem(16px);
+    }
+    .device-img{
+	margin-top: .75rem;
+	margin-bottom: 1.5rem;
+    }
+    .device-link{
+	.icon{
+	    color: $gray-700;
+	    width: 21px;
+	    height: 21px;
+	    margin-right: .7rem;
 	}
     }
 }
