@@ -635,3 +635,14 @@ img{
 	}
     }
 }
+/*FAQ*/
+.faq-header{
+    color: #fff;
+    max-width: 815px;
+    .heading{
+	text-transform: uppercase;
+	font-size: rem(22px);
+	font-weight: 700;
+	margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,360 @@
+<% var data = {
+title: "Agreement to sell - step 1 | Btech",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<div class="page-header bg-2">
+    <div class="container faq-header">
+	<p class="heading">How can we help you?</p>
+	<div class="form-group">
+	    <input class="form-control" type="text" placeholder="Type keywords to find answers">
+	</div>
+	<p class="mt-4">You can also browse the topics below to find what you are looking for.</p>
+    </div>
+</div>
+<section class="section">
+    <div class="container">
+	<div class="row">
+	    <div class="col-lg-3 col-md-4">
+		<h2 class="h2">Summary</h2>
+	    </div>
+	    <div class="col-lg-9 col-md-8">
+		<h2 class="h2">FAQs - Product Information</h2>
+		<div class="accordion" id="ProductInformation">
+		    <div class="card">
+			<div class="card-header" id="heading-1">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+				Do you provide actual images of the products available for sale?
+			    </button>
+			</div>
+
+			<div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#ProductInformation">
+			    <div class="card-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-2">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+				How does the bTech market grading system work?
+			    </button>
+			</div>
+			<div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#ProductInformation">
+			    <div class="card-body">
+				<p>At bTech market, each product is graded according to its physical condition that may vary. You can expect that products will function as perfectly as new models, but they might have cosmetic flaws. By checking the assigned grade against each item, you can have a fair overview of what to expect. Here’s how:</p>
+				<h3 class="h3">Grade A</h3>
+				<p>The exterior of the product will look almost new. In case you’re buying smartph1s and MacBooks, expect that the screen will not have any scratches.</p>
+				<h3 class="h3">Grade B</h3>
+				<p>Depending on the specific product, the screen may or may not have light scratches that are invisible when viewed from 8 to 10 inches away. Chances are the flaws may not be visible when the device is turned on. </p>
+				<h3 class="h3">Refurbished</h3>
+				<p>These products carry the bTech Market guarantee of 100% functionality. These products are as good as brand new, no scratches, no damage to the body and work as well as an unused product.</p>
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-3">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+				What is the battery’s condition?
+			    </button>
+			</div>
+			<div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#ProductInformation">
+			    <div class="card-body">
+				When checking products during the refurbishment process, technicians test the battery to make sure it charges to 80% or higher of its original capacity. If the battery does not charge, a new one is fitted in its place. If you aren’t quite happy with the charging capacity, the 1-year warranty has you covered.
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<h2 class="h2 mt-3">FAQs - Refurbishment Processes</h2>
+		<div class="accordion" id="RefurbishmentProcesses">
+		    <div class="card">
+			<div class="card-header" id="heading-4">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+				What are refurbished products? 
+			    </button>
+			</div>
+
+			<div id="collapse-4" class="collapse show" aria-labelledby="heading-4" data-parent="#RefurbishmentProcesses">
+			    <div class="card-body">
+				The refurbishing company receives pre-owned devices and assigns expert technicians to examine them for proper functionality. All worn out and defective parts are replaced with company-manufactured original spares and again tested for performance. The device receives certification and is placed back on sale. Refurbished products are cosmetically similar to a brand-new device and function as well as unused devices
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-5">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+				What is a refurbishing company?
+			    </button>
+			</div>
+			<div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#RefurbishmentProcesses">
+			    <div class="card-body">
+				Refurbishing companies have a team of trained professionals on board who are assigned the task of checking products and repairing them. When you search around for refurbs on bTech Market, expect that the refurbishing company and seller are the same entity. On checking the specs of each product, you’ll also find the repairing agency’s name listed. In case you’re not completely satisfied with the device, you can contact the refurbishing company through our website and put forward your complaint. Buyers can also contact our customer service portal if they have any issues with their orders.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-6">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+				How do I know that the refurbishing company is reliable?
+			    </button>
+			</div>
+			<div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#RefurbishmentProcesses">
+			    <div class="card-body">
+				At bTech Market, we vet each refurbishing company carefully before adding their products to our list. While we have a large network of certified refurbishing agencies, it is our endeavor to constantly add more companies with advanced technical skills on our portal. Customers are encouraged to submit reviews of their experiences and check reviews before placing orders for products.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-7">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+				Does bTech Market have in-house technicians for refurbishing products?
+			    </button>
+			</div>
+			<div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#RefurbishmentProcesses">
+			    <div class="card-body">
+				Our platform works to connect reliable refurbishing companies with customers interested in buying products that are economical and fully functional. Our services include finding the best of vendors providing quality products and offering you access to them. We also verify the technical skills of the personnel working on the products. 
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<h2 class="h2 mt-3">FAQs - Returning and Exchanging Products</h2>
+		<div class="accordion" id="ExchangingProducts">
+		    <div class="card">
+			<div class="card-header" id="heading-8">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+				What if I don’t like the product I receive?
+			    </button>
+			</div>
+			<div id="collapse-8" class="collapse show" aria-labelledby="heading-8" data-parent="#ExchangingProducts">
+			    <div class="card-body">
+				If you aren’t quite happy with the product because of some technical issues, you must contact the refurbisher right away. Log into your account and you’ll find a button that says, “Contact the Vendor.” You’ll receive detailed instructions on how to return the products. bTech Market allows you up to 30 days to send back the device and request a refund for the entire price paid.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-9">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+				What if the package is damaged when I receive it?
+			    </button>
+			</div>
+			<div id="collapse-9" class="collapse" aria-labelledby="heading-9" data-parent="#ExchangingProducts">
+			    <div class="card-body">
+				Before you sign the delivery receipt, and receive the product, make sure to check the external packaging. Contact the refurbisher within a 48-hour window so the company can make inquiries at the shipping agency.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-10">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+				What if the product is damaged?
+			    </button>
+			</div>
+			<div id="collapse-10" class="collapse" aria-labelledby="heading-10" data-parent="#ExchangingProducts">
+			    <div class="card-body">
+				In case the product is damaged like, for instance, the screen or camera is broken, even though the packaging is intact, contact the refurbisher. It is advisable that you make your request within 48 hours of receipt. 
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-11">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+				What if the product is not functioning as it should?
+			    </button>
+			</div>
+			<div id="collapse-11" class="collapse" aria-labelledby="heading-11" data-parent="#ExchangingProducts">
+			    <div class="card-body">
+				<p>Get in touch with the refurbisher by logging in to your account on the website. You can use the contact page to clearly explain what is wrong with the product. Adding pictures to support your explanation of the defects helps. For instance, if the specifications are not working. Each detail you provide helps move the process along. You can also put down what the refurbishing company can do to right the error.</p>
+				<p>In case the refurbisher is at fault, you’ll receive a return slip so you can return the item. If a similar model is available, you’ll receive a replacement. If not, the company will send you a refund. Our platform monitors your communication and you can expect a fair settlement of the dispute.</p>
+				<p>Before sending back a rejected product, make sure to log out of your iCloud and Google accounts. In case you’re still logged in when the product reaches the refurbisher’s workshop, they’ll need you to send in the information so that the techs can process your complaint and provide repairs, replacements, or refunds on the order. Resolving your complaint can thus take longer if your device is locked to iCloud or Google accounts.</p>
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-12">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+				What if the product is lost or delivered to the wrong address?
+			    </button>
+			</div>
+			<div id="collapse-12" class="collapse" aria-labelledby="heading-12" data-parent="#ExchangingProducts">
+			    <div class="card-body">
+				Contact the seller within 48 hours. Typically, vendors start an inquiry that takes a maximum of 5 to 7 days to resolve. Once the matter is sorted, you can expect to receive a full refund of the amount you paid. Alternatively, depending on the availability of stock, you’ll receive a replacement product similar to the one you ordered originally.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-13">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
+				Can I cancel my order or request a change in the shipping address?
+			    </button>
+			</div>
+			<div id="collapse-13" class="collapse" aria-labelledby="heading-13" data-parent="#ExchangingProducts">
+			    <div class="card-body">
+				<p>Log into your account on the bTech Market website. We have an order tracking feature that informs you about the current status of the order. If the vendor has not yet shipped the order, you can contact the seller and place your request for cancellation or change in the shipping address. </p>
+				<p>If the vendor has already shipped the order, the package will arrive at your original address. If it is not claimed, the shipping company will return it to the refurbisher in 10-15 days’ time. You should receive a refund, automatically. In any case, it helps to have an open customer service request on our site until the issue is resolved. </p>
+				<p>Do keep in mind that cancellation and changes in the shipping address can take some time to take effect. For this reason, there may be delays in processing your request depending on the size of the vendor’s operations. </p>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<h2 class="h2 mt-3">FAQs - Accessories</h2>
+		<div class="accordion" id="FaqAccessories">
+		    <div class="card">
+			<div class="card-header" id="heading-14">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-14" aria-expanded="true" aria-controls="collapse-14">
+				Can I expect to receive original accessories?
+			    </button>
+			</div>
+			<div id="collapse-14" class="collapse show" aria-labelledby="heading-14" data-parent="#FaqAccessories">
+			    <div class="card-body">
+				When you check the specifics of the product, you’ll see a detailed listing of the accessories included with the product. Unless it is clearly stated that you’ll receive original accessories, they won’t be added to the product. In case accessories are listed, you can expect that they will be new and compatible with the product. However, most accessories are usually manufactured by specialist brands that produce headphones, hands-free kits, and charges, among others.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-15">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15">
+				I’ve received defective accessories. Or, some of them are missing. What now?
+			    </button>
+			</div>
+			<div id="collapse-15" class="collapse" aria-labelledby="heading-15" data-parent="#FaqAccessories">
+			    <div class="card-body">
+				Log into your account and check the details of the product you ordered. At the bottom of the page, you’ll see a list of comments added by the refurbishing company. You’ll also see information about the accessories included with the product. In case the description is different from what you received, contact the vendor right away.
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<h2 class="h2 mt-3">FAQs - Pricing Systems</h2>
+		<div class="accordion" id="PricingSystems">
+		    <div class="card">
+			<div class="card-header" id="heading-16">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-16" aria-expanded="true" aria-controls="collapse-16">
+				Why do the same products carry different prices?
+			    </button>
+			</div>
+			<div id="collapse-16" class="collapse show" aria-labelledby="heading-16" data-parent="#PricingSystems">
+			    <div class="card-body">
+				We have an extensive network of refurbishing companies that display their products on our website. Each agency sets its own prices. We assign a grade to each product according to aesthetic appearance and hope to deliver the best value for money to our customers. Do keep in mind that the best prices vary each day and can depend on the grade of the product. However, rest assured that each device will perform comparably to a new model. 
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-17">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17">
+				Why do some products show “crossed-out” prices?
+			    </button>
+			</div>
+			<div id="collapse-17" class="collapse" aria-labelledby="heading-17" data-parent="#PricingSystems">
+			    <div class="card-body">
+				When a product first enters the market, the manufacturer puts an estimated price on it. This figure can vary according to the particular dealer or distributor offering the product. The crossed-out prices you see are the average original prices in the market. The numbers give you an estimate of the discounts you’re getting on the particular product. 
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-18">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-18" aria-expanded="false" aria-controls="collapse-18">
+				What are the payment options I can use?
+			    </button>
+			</div>
+			<div id="collapse-18" class="collapse" aria-labelledby="heading-18" data-parent="#PricingSystems">
+			    <div class="card-body">
+				You can make payments using our secure portals. We accept VISA, MasterCard, American Express, and PAYPAL. We do not ACCEPT bank transfers, cash payments, or checks.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-19">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-19" aria-expanded="false" aria-controls="collapse-19">
+				Can I make payments in installments?
+			    </button>
+			</div>
+			<div id="collapse-19" class="collapse" aria-labelledby="heading-19" data-parent="#PricingSystems">
+			    <div class="card-body">
+				bTech Market does not accept payment in installments at this time. 
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<h2 class="h2 mt-3">FAQs - Warranty and Compatibility</h2>
+		<div class="accordion" id="WarrantyCompatibility">
+		    <div class="card">
+			<div class="card-header" id="heading-20">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-20" aria-expanded="true" aria-controls="collapse-20">
+				Are products covered by Warranty?
+			    </button>
+			</div>
+			<div id="collapse-20" class="collapse show" aria-labelledby="heading-20" data-parent="#WarrantyCompatibility">
+			    <div class="card-body">
+				When you purchase a product on bTech Market, you’ll receive a 1-year warranty from the date of purchase which is free of cost. This warranty provides assurance for malfunctions and defective parts. For instance, you can contact us in case the touch screen is not functioning or the battery is weak. Of course, the warranty does not apply in case of lost, dropped, or broken products. We also don’t cover oxidized devices which can happen if they are dropped in water.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-21">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-21" aria-expanded="false" aria-controls="collapse-21">
+				What if the product needs more repairing?
+			    </button>
+			</div>
+			<div id="collapse-21" class="collapse" aria-labelledby="heading-21" data-parent="#WarrantyCompatibility">
+			    <div class="card-body">
+				If you have any problems with the products bought on our website, we encourage you to contact the seller or our customer service center. The warranty will no longer remain valid if the product is taken apart by any other person. Visit our site and let the seller know about the issues you’re facing. You can then return the device for further testing. If repairs cannot be made, you’ll receive a refund. Depending on availability, the vendor might choose to replace the product with another refurb.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-22">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-22" aria-expanded="false" aria-controls="collapse-22">
+				Can I use any SIM card with the refurbished phone?
+			    </button>
+			</div>
+			<div id="collapse-22" class="collapse" aria-labelledby="heading-22" data-parent="#WarrantyCompatibility">
+			    <div class="card-body">
+				ALL Refurbished phones are UNLOCKED which means that you can purchase a new SIM card and insert it into the handset. If you’re like more information about the compatibility of the phone with a specific telecom company, it is best that you check the website of the original manufacturer. Like, for instance, Samsung, Nokia, Apple, or any other. You could also check with your mobile network provider about the specific handsets they support and then finalize your purchase.
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<h2 class="h2 mt-3">FAQs - Placing Orders and Invoicing </h2>
+		<div class="accordion" id="PlacingOrders">
+		    <div class="card">
+			<div class="card-header" id="heading-23">
+			    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-23" aria-expanded="true" aria-controls="collapse-23">
+				How do I get the invoices for my order?
+			    </button>
+			</div>
+			<div id="collapse-23" class="collapse show" aria-labelledby="heading-23" data-parent="#PlacingOrders">
+			    <div class="card-body">
+				Log into your account on bTech Market and check the (order summary). You should see a clickable button, “Request an invoice” or “Download the invoice.” If you don’t receive the invoice within 48 hours, you could contact us.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-24">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-24" aria-expanded="false" aria-controls="collapse-24">
+				How can I find out about the status of the delivery?
+			    </button>
+			</div>
+			<div id="collapse-24" class="collapse" aria-labelledby="heading-24" data-parent="#PlacingOrders">
+			    <div class="card-body">
+				Log into your account and go to the “Order Status” page which shows you the status of your order. If you cannot find the information, or if there are any delays in the shipping, contact us and request an update. You may also want to open a customer service request if the device has not been shipped within 2 business days of placing the order.
+			    </div>
+			</div>
+		    </div>
+		    <div class="card">
+			<div class="card-header" id="heading-25">
+			    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-25" aria-expanded="false" aria-controls="collapse-25">
+				When can I expect delivery of my order?
+			    </button>
+			</div>
+			<div id="collapse-25" class="collapse" aria-labelledby="heading-25" data-parent="#PlacingOrders">
+			    <div class="card-body">
+				Typically, products are dispatched within 1-2 business days. If you place an order after 12:00 pm, expect that shipping will take place during the next business day. We also request that you allow for delays because of unforeseen circumstances. Like, for instance, a large number of orders during the Holiday season or bad weather conditions. 
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
