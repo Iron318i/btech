@@ -760,3 +760,54 @@ img{
 	color: #fff;
     }
 }
+.review{
+    .review-heading{
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+    }
+    .icon{
+	color: #a1a1a1;
+	width: 17px;
+	height: 17px;
+    }
+    .date{
+	text-align: right;
+	color: #999;
+	font-size: 11px;
+    }
+    .qoute{
+	margin-bottom: 2rem;
+    }
+    .author{
+	font-size: rem(15px);
+    }
+}
+.owl-theme {
+    .owl-nav{
+	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0;
+	font-size: 30px;
+	button{
+	    line-height: 30px;
+	    &:focus {
+		outline: none;
+	    }
+	}
+	.owl-prev{
+	    transform: translateY(-50%);
+	    position: absolute;
+	    left: 0;
+	}
+	.owl-next{
+	    transform: translateY(-50%);
+	    position: absolute;
+	    right: 0;
+	}
+    }
+}

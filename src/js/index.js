@@ -29,5 +29,35 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	}
     });
 
-    $('.owl-carousel').owlCarousel();
+    $('.reviews.owl-carousel').owlCarousel({
+	loop: false,
+	nav: true,
+	dots: false,
+	responsiveClass: true,
+	navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>'],
+	responsive: {
+	    0: {
+		items: 1,
+		nav: false,
+		dots: true,
+		margin: 0
+	    },
+	    480: {
+		items: 2,
+		nav: false,
+		dots: true,
+		margin: 20
+	    },
+	    768: {
+		items: 3,
+		nav: true,
+		margin: 10
+	    },
+	    992: {
+		items: 4,
+		nav: true,
+		margin: 18
+	    }
+	}
+    });
 }(jQuery);

@@ -150,8 +150,11 @@ $alert-border-width: 0;
 // Close
 // Code
 //OWL
+$nav-color: $gray-700;
+$nav-background-hover: transparent;
+$nav-color-hover:  $nav-color;
 
-$dot-background: rgba(#FFF, 0.5);
-$dot-background-active: #fff;
+$dot-background: $gray-600;
+$dot-background-active: $gray-700;
 $dot-width: .6rem;
 $dot-height:  $dot-width;
