@@ -2,6 +2,7 @@ import jQuery from "jquery";
 import popper from "popper.js";
 import bootstrap from "bootstrap";
 import dropzone from "dropzone";
+import 'owl.carousel';
 //import bootstrap-touchspin from "bootstrap-touchspin";
 
 var SameHeight = require('same-height');
@@ -27,4 +28,6 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    $(this).children(".playpause").fadeIn();
 	}
     });
+
+    $('.owl-carousel').owlCarousel();
 }(jQuery);
