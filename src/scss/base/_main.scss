@@ -199,6 +199,10 @@ img{
 	background: #393839 url(../img/page-header-bg-2.jpg) 50% no-repeat;
 	background-size: cover;
     }
+    &.bg-3{
+	background: #393839 url(../img/page-header-bg-3.jpg) 50% no-repeat;
+	background-size: cover;
+    }
 }
 /*How you want to be Paid*/
 .payment-options{
@@ -639,11 +643,26 @@ img{
 .header-search{
     color: #fff;
     max-width: 815px;
+    padding: 1.5rem 0;
     .heading{
 	text-transform: uppercase;
 	font-size: rem(22px);
 	font-weight: 700;
 	margin-bottom: 2rem;
+    }
+    p a{
+	color: #fff;
+	text-decoration: underline;
+    }
+    .input-group .btn{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-color: #fff;
+	.icon {
+	    color: #000;
+	    width: 19px;
+	    height: 19px;
+	}
     }
 }
 .accordion {
