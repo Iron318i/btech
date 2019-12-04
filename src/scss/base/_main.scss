@@ -921,3 +921,23 @@ img{
 	color: #fff;
     }
 }
+.category{
+    flex-direction: row;
+    margin-bottom: 1rem;
+    .img{
+	flex: 0 0 40%;
+	padding-right: 1rem;
+    }
+    .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    }
+    .title{
+	margin-bottom: .5rem;
+    }
+    .description{
+	color: $gray-500;
+	max-width: 220px;
+    }
+}
