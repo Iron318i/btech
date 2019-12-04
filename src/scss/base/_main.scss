@@ -941,3 +941,53 @@ img{
 	max-width: 220px;
     }
 }
+.home-banner{
+    background: url(../img/home-banner.jpg) 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    p{
+	font-size: rem(14px);
+	font-weight: 300;
+	line-height: 1.5;
+    }
+    .h1{
+	color: #fff;
+	font-size: rem(45px);
+	line-height: 1.1;
+    }
+    .row{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	@media(min-width: 768px ) and (max-width: 991px ) {
+	    min-height: 250px;
+	}
+	@media(min-width: 992px ) {
+	    min-height: 320px;
+	    .h1{
+		font-size: rem(57px);
+	    }
+	}
+	@media(min-width: 1200px ){
+	    min-height: 414px;
+	}
+    }
+    @media(max-width: 767px ) {
+	.container{
+	    position: relative;
+	    z-index: 2;
+	    text-align: center;
+	}
+	&:after{
+	    content: "";
+	    position: absolute;
+	    z-index: 1;
+	    display: block;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: rgba( #000, .5);
+	}
+    }
+}
