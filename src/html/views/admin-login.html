@@ -1,0 +1,96 @@
+<% var data = {
+title: "Admin Login | Btech",
+}; %>
+<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<section class="section container">
+    <div class="row row-100">
+	<div class="col-md-6">
+	    <h2 class="h4">Existing administrator</h2>
+	    <form>
+		<div class="form-group">
+		    <input type="email" class="form-control form-control-lg" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+		    <div class="input-group input-group-lg">
+			<input type="password" class="form-control" placeholder="Password">
+			<div class="input-group-append">
+			    <button class="btn btn-outline-info" type="button">
+				<svg class="icon eye-open">
+				<use xlink:href="#eye-open"></use>
+				</svg>
+			    </button>
+			</div>
+		    </div>
+		    <span class="form-text"><a href="#">Forgot your password?</a></span>
+		</div>
+		<div class="form-group">
+		    <button type="submit" class="btn btn-primary btn-lg btn-block">Welcome back!</button>
+		</div>
+	    </form>
+	</div>
+	<div class="col-md-6">
+	    <h2 class="h4">New administrator</h2>
+	    <form>
+		<div class="form-row">
+		    <div class="col-sm-6">
+			<div class="form-group">
+			    <input type="text" class="form-control form-control-lg" placeholder="First name*">
+			</div>
+		    </div>
+		    <div class="col-sm-6">
+			<div class="form-group">
+			    <input type="text" class="form-control form-control-lg" placeholder="Last name*">
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <div class="input-group input-group-lg">
+			<div class="input-group-append">
+			    <select class="form-control form-control-lg">
+				<option>Can +1</option>
+				<option>Can +2</option>
+				<option>Can +3</option>
+				<option>Can +4</option>
+			    </select>
+			</div>
+			<div class="custome-placeholder">
+			    <input type="text" class="form-control form-control-lg" required="required">
+			    <div class="placeholder"><span class="text-muted">Phone number - optional</span><br><span>000-000-0000</span></div>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <textarea rows="8" class="form-control" placeholder="Description of your business (what products do you refurbish?)"></textarea>
+		</div>
+		<div class="form-row">
+		    <div class="col-sm-6">
+			<div class="form-group">
+			    <input type="email" class="form-control form-control-lg" placeholder="Email*">
+			</div>
+		    </div>
+		    <div class="col-sm-6">
+			<div class="form-group">
+			    <div class="input-group input-group-lg">
+				<input type="password" class="form-control" placeholder="Password">
+				<div class="input-group-append">
+				    <button class="btn btn-outline-info" type="button">
+					<svg class="icon eye-open">
+					<use xlink:href="#eye-open"></use>
+					</svg>
+				    </button>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <button type="submit" class="btn btn-primary btn-lg btn-block">Create my accounts</button>
+		</div>
+	    </form>
+	</div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>
