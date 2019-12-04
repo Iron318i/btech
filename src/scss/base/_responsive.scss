@@ -82,6 +82,11 @@
 	    }
 	}
     }
+    #allProductsMenu{
+	.sub-menu-wrp {
+	    padding: rem(20px 30px);
+	}
+    }
 }
 @include media-breakpoint-down(sm) {
     .sidebar,

@@ -1,4 +1,5 @@
 .site-header{
+    position: relative;
     background-color: $black;
     .top{
 	padding-top: 20px;
@@ -225,5 +226,58 @@
 	.user-menu{
 	    flex: 0 0 50%;
 	}
+    }
+}
+#allProductsMenu{
+    position: absolute;
+    left: 37px;
+    top: 135px;
+    background-color: #fff;
+    width: 770px;
+    height: 414px;
+    z-index: 10;
+    display: flex;
+    .aside{
+	flex: 0 0 175px;
+	background-color: $gray-700;
+	.nav{
+	    flex-direction: column;
+	    li{
+		border-bottom: 1px solid #525252;
+		&.active,
+		&:hover{
+		    background-color: #242424;
+		    border-bottom: 1px solid #242424;
+		}
+		a{
+		    display: inline-block;
+		    width: 100%;
+		    padding: rem(13px 20px);
+		    font-size: rem(14px);
+		}
+	    }
+	}
+    }
+    .menu{
+	a{
+	    color: #000;
+	}
+    }
+    .sub-menu-wrp{
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+    }
+    .heading{
+	flex: 0 0 100px
+    }
+    .addition{
+	margin-top: 1rem;
+	flex: 0 0 100%;
+    }
+    .sub-menu ul {
+	padding: 0;
+	list-style: none;
+	column-count: 3;
     }
 }
