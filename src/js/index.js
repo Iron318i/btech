@@ -60,4 +60,6 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    }
 	}
     });
+
+
 }(jQuery);
