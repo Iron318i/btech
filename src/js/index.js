@@ -11,14 +11,12 @@ SameHeight.init('.same-height-md', "screen and (min-width: 768px)");
 SameHeight.init('.device-tmpl-1 .device-title');
 SameHeight.init('.device-tmpl-1 .device-img');
 SameHeight.init('.device-tmpl-1 .device-link');
-
 +function ($) {
 // How you want to be Paid temporary script
     $('.payment').on('click', function () {
 	$('.payment-options .payment').removeClass('active');
 	$(this).addClass('active');
     });
-
     $('.video').parent().click(function () {
 	if ($(this).children(".video").get(0).paused) {
 	    $(this).children(".video").get(0).play();
@@ -28,7 +26,6 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    $(this).children(".playpause").fadeIn();
 	}
     });
-
     $('.reviews.owl-carousel').owlCarousel({
 	loop: false,
 	nav: true,
@@ -60,6 +57,9 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    }
 	}
     });
-
-
+    $('#mobileMenuTogller').on('click', function (evt) {
+	evt.preventDefault();
+	$('.site-header .main-menu').toggleClass('show');
+	$('.site-header .user-menu').toggleClass('show');
+    });
 }(jQuery);
