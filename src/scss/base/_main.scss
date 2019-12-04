@@ -754,6 +754,36 @@ img{
 	}
     }
 }
+.device-tmpl-2{
+    flex-direction: row;
+    margin-bottom: 1rem;
+    .device-img{
+	flex: 0 0 40%;
+	padding-right: 1rem;
+	img{
+	    max-width: 80px;
+	}
+    }
+    .device-title{
+	font-size: rem(14px);
+	line-height: 1.1;
+	margin-bottom: .3rem;
+    }
+    .grade{
+	font-size: 11px;
+	color: $gray-500;
+	margin-bottom: .3rem;
+    }
+    .price{
+	font-size: rem(16px);
+	font-weight: 700;
+    }
+    .device-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    }
+}
 .card.bg-primary{
     color: #a1a1a1;
     .h2{

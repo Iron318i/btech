@@ -1,9 +1,79 @@
 <% var data = {
-  title: "Home | Btech",
+title: "Home | Btech",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
 
-<div class="container">Первая страница.</div>
+<section class="section">
+    <div class="container">
+	<h2 class="h2">Best Sellers</h2>
+	<div class="row ">
+	    <div class="col-12 col-sm-6 col-lg-3">
+		<div class="card card-body device-tmpl-2">
+		    <div class="device-img">
+			<a href="#">
+			    <img src="./uploads/device-150x170-1.png" alt="iPhone XS 256GB">
+			</a>
+		    </div>
+		    <div class="device-info">
+			<a href="#">
+			    <h3 class="device-title">iPhone XS 256GB Space Gray Unlocked</h3>
+			</a>
+			<div class="grade">Grade: Refurbished</div>
+			<div class="price">$192.00</div>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-12 col-sm-6 col-lg-3">
+		<div class="card card-body device-tmpl-2">
+		    <div class="device-img">
+			<a href="#">
+			    <img src="./uploads/device-150x170-5.png" alt="iPhone XS 256GB">
+			</a>
+		    </div>
+		    <div class="device-info">
+			<a href="#">
+			    <h3 class="device-title">iPhone XS 256GB Space Gray Unlocked</h3>
+			</a>
+			<div class="grade">Grade: Refurbished</div>
+			<div class="price">$192.00</div>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-12 col-sm-6 col-lg-3">
+		<div class="card card-body device-tmpl-2">
+		    <div class="device-img">
+			<a href="#">
+			    <img src="./uploads/device-150x170-3.png" alt="iPhone XS 256GB">
+			</a>
+		    </div>
+		    <div class="device-info">
+			<a href="#">
+			    <h3 class="device-title">iPhone XS 256GB Space Gray Unlocked</h3>
+			</a>
+			<div class="grade">Grade: Refurbished</div>
+			<div class="price">$192.00</div>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-12 col-sm-6 col-lg-3">
+		<div class="card card-body device-tmpl-2">
+		    <div class="device-img">
+			<a href="#">
+			    <img src="./uploads/device-150x170-2.png" alt="iPhone XS 256GB">
+			</a>
+		    </div>
+		    <div class="device-info">
+			<a href="#">
+			    <h3 class="device-title">iPhone XS 256GB Space Gray Unlocked</h3>
+			</a>
+			<div class="grade">Grade: Refurbished</div>
+			<div class="price">$192.00</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</section>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
