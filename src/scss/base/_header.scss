@@ -229,9 +229,6 @@
     }
 }
 #allProductsMenu{
-    position: absolute;
-    left: 37px;
-    top: 135px;
     background-color: #fff;
     max-width: 770px;
     min-height: 414px;
@@ -242,7 +239,7 @@
 	display: flex;
     }
     .aside{
-	flex: 0 0 175px;
+	flex: 0 0 110px;
 	background-color: $gray-700;
 	.nav{
 	    flex-direction: column;
@@ -250,7 +247,7 @@
 		a{
 		    display: inline-block;
 		    width: 100%;
-		    padding: rem(13px 20px);
+		    padding: 1rem;
 		    font-size: rem(14px);
 		    border-bottom: 1px solid #525252;
 		    &.active,
@@ -274,7 +271,7 @@
 	flex-wrap: wrap;
     }
     .heading{
-	flex: 0 0 100px;
+	flex: 0 0 100%;
 	padding-top: 8px;
 	a{
 	    text-decoration: underline;
@@ -293,7 +290,7 @@
 	ul {
 	    padding: 0;
 	    list-style: none;
-	    column-count: 3;
+	    column-count: 2;
 	    column-gap: 20px;
 	    li{
 		padding-top: 10px;
@@ -301,6 +298,31 @@
 		    font-size: rem(14px);
 		    font-weight: 300;
 		}
+	    }
+	}
+    }
+    @media (min-width: 1600px){
+	left: 37px;
+    }
+    @include media-breakpoint-up(sm) {
+	.aside{
+	    flex: 0 0 175px;
+	    .nav li a{
+		padding: rem(13px 20px);
+	    }
+	}
+	.heading {
+	    flex: 0 0 100px;
+	}
+    }
+    @include media-breakpoint-up(md) {
+	position: absolute;
+	left: 0;
+	top: 135px;
+	.sub-menu{
+	    ul {
+		column-count: 3;
+		column-gap: 20px;
 	    }
 	}
     }
