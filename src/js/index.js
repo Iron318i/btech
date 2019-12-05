@@ -62,4 +62,21 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	$('.site-header .main-menu').toggleClass('show');
 	$('.site-header .user-menu').toggleClass('show');
     });
+
+    $('#brandsNav a[href^="#"]').on("click", function (event) {
+	event.preventDefault();
+	$("#brandsNav a").removeClass('active');
+	$(this).addClass('active');
+	var menuID = $(this).attr('href');
+	$(".sub-menu-wrp").slideUp();
+	$(menuID).slideDown({
+	    start: function () {
+		$(this).css({
+		    display: "flex"
+		});
+	    }
+	});
+    });
+
+
 }(jQuery);
