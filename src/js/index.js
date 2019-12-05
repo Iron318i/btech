@@ -77,6 +77,14 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    }
 	});
     });
+    $(document).on('click', function (e) {
+	/* bootstrap collapse js adds "in" class to your collapsible element*/
+	var menu_opened = $('#allProductsMenu').hasClass('show');
 
-
+	if (!$(e.target).closest('#allProductsMenu').length &&
+		!$(e.target).is('#allProductsMenu') &&
+		menu_opened === true) {
+	    $('#allProductsMenu').collapse('toggle');
+	}
+    });
 }(jQuery);

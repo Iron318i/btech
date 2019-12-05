@@ -237,7 +237,10 @@
     min-height: 414px;
     width: 100%;
     z-index: 10;
-    display: flex;
+    display: none;
+    &.show{
+	display: flex;
+    }
     .aside{
 	flex: 0 0 175px;
 	background-color: $gray-700;
