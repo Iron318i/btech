@@ -71,6 +71,7 @@ $h1-font-size:  rem(25px);
 $h2-font-size:  rem(25px);
 $h3-font-size:  rem(22px);
 $h4-font-size:  rem(18px);
+$h5-font-size:  rem(16px);
 
 $headings-line-height: 1.5;
 $headings-margin-bottom: 1rem;
@@ -143,6 +144,8 @@ $alert-border-radius: 0;
 $alert-border-width: 0;
 // Progress bars
 // List group
+$list-group-active-bg: #fff;
+$list-group-active-border-color: $gray-700;
 // Image thumbnails
 // Figures
 // Breadcrumbs

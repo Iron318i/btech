@@ -991,3 +991,57 @@ img{
 	}
     }
 }
+/*INVENTORY*/
+.card{
+    .card-header{
+	border-radius: 0;
+	border-color: $gray-700;
+	background-color: $gray-700;
+	> *{
+	    font-weight: 300;
+	    color: #fff;
+	    margin-bottom: 0;
+	}
+    }
+}
+.list-group-item.active{
+    border-width: 2px;
+    border-right: 2px solid $list-group-active-border-color;
+    border-left: 2px solid $list-group-active-border-color;
+}
+.vendor-item{
+    font-size: 12px;
+    .h4{
+	font-size: 12px;
+	font-weight: 700;
+    }
+    .sep{
+	color: #ccc;
+	margin: 0 .5rem;
+    }
+}
+.scroll-y{
+    height: 1500px;
+    overflow-y: scroll;
+    /* width */
+    &::-webkit-scrollbar {
+	width: 17px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+	background: #fcfcfc;
+	border-left: 1px solid $list-group-border-color;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+	background: #d6d6d6;
+	border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+	background: #555;
+    }
+}
