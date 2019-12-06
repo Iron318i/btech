@@ -102,7 +102,7 @@ SameHeight.init('.device-tmpl-1 .device-link');
     $(window).on("load", function () {
 	$(".scroll-y").mCustomScrollbar({
 	    setHeight: 500,
-	    theme: "minimal-dark"
+	    // theme: "3d-thick"
 	});
     });
 
