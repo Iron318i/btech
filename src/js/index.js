@@ -3,6 +3,8 @@ import popper from "popper.js";
 import bootstrap from "bootstrap";
 import dropzone from "dropzone";
 import 'owl.carousel';
+import 'jquery-mousewheel';
+import 'malihu-custom-scrollbar-plugin';
 //import bootstrap-touchspin from "bootstrap-touchspin";
 
 var SameHeight = require('same-height');
@@ -95,6 +97,13 @@ SameHeight.init('.device-tmpl-1 .device-link');
     $(document).ready(function () {
 	checkHeaderHeight();
 	$(window).on('resize', checkHeaderHeight);
+    });
+
+    $(window).on("load", function () {
+	$(".scroll-y").mCustomScrollbar({
+	    setHeight: 500,
+	    theme: "minimal-dark"
+	});
     });
 
 }(jQuery);
