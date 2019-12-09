@@ -17,6 +17,31 @@
 	    padding-right: 18px;
 	}
     }
+    .inventory-product-list{
+	.product{
+	    padding-left: 18px;
+	    padding-right: 18px;
+	    .img{
+		flex: 0 0 30%;
+		max-width: 30%;
+		text-align: center;
+		img{
+		    width: 100%;
+		    max-width: 170px;
+		}
+	    }
+	    .content{
+		flex: 0 0 47%;
+		max-width: 47%;
+	    }
+	    .status{
+		flex: 0 0 23%;
+		max-width: 23%;
+		padding-left: 25px;
+		padding-right: 25px;
+	    }
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     .col-lg-5-12{
