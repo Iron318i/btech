@@ -102,9 +102,7 @@ SameHeight.init('.device-tmpl-1 .device-link');
     });
     /*malihu-custom-scrollbar-plugin*/
     $(window).on("load", function () {
-	$(".scroll-y").mCustomScrollbar({
-	    setHeight: 1500
-	});
+	$(".scroll-y").mCustomScrollbar({});
     });
 
 }(jQuery);

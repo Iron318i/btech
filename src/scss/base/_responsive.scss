@@ -56,6 +56,11 @@
 	    margin: 1rem -2rem;
 	}
     }
+    .inventory{
+	.scroll-y{
+	    height: 1500px;
+	}
+    }
 }
 @include media-breakpoint-up(sm) {
     .page-header{
@@ -147,6 +152,9 @@
 	[class*="col-lg-"]{
 	    margin-bottom: 1rem;
 	}
+    }
+    .gap-md{
+	margin-top: 2rem;
     }
 }
 @media(max-width: 479px){
