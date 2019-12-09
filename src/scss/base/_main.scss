@@ -870,7 +870,7 @@ img{
 	}
 	.memory{
 	    span{
-		padding: 5px;
+		padding: 3px 5px;
 		background-color: #fff;
 		border: 1px solid #e6e6e6;
 	    }
@@ -910,6 +910,11 @@ img{
 	padding-top: 1rem;
 	margin-top: 1rem;
 	border-top: 1px solid $gray-200;
+    }
+}
+.orders-full{
+    .shipping-info{
+	border-left: 1px solid $gray-200;
     }
 }
 .products-list{

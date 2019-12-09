@@ -1,77 +1,3 @@
-@media (min-width: 1280px){
-    .row-100{
-	margin-left: -50px;
-	margin-right: -50px;
-	> .col,
-	> [class*="col-"] {
-	    padding-left: 50px;
-	    padding-right: 50px;
-	}
-    }
-    .row-35{
-	margin-left: -18px;
-	margin-right: -18px;
-	> .col,
-	> [class*="col-"] {
-	    padding-left: 18px;
-	    padding-right: 18px;
-	}
-    }
-    .products-list{
-	.product{
-	    padding: 2.5rem 18px;
-	    .img{
-		flex: 0 0 30%;
-		max-width: 30%;
-		text-align: center;
-		img{
-		    width: 100%;
-		    max-width: 170px;
-		}
-	    }
-	    .content{
-		flex: 0 0 47%;
-		max-width: 47%;
-	    }
-	    .status{
-		flex: 0 0 23%;
-		max-width: 23%;
-		padding-left: 25px;
-		padding-right: 25px;
-	    }
-	}
-    }
-    .orders{
-	.shipping-info{
-	    padding-top: 2rem;
-	    margin-top: 2rem;
-	}
-    }
-}
-@include media-breakpoint-up(lg) {
-    .col-lg-5-12{
-	flex: 0 0 20%;
-	min-width: 20%;
-    }
-    .post-content{
-	padding: 2rem;
-    }
-    .single-post{
-	.post-img{
-	    margin: 1rem -2rem;
-	}
-    }
-    .inventory{
-	.scroll-y{
-	    height: 1500px;
-	}
-    }
-    .orders{
-	.scroll-y{
-	    height: 1460px;
-	}
-    }
-}
 @include media-breakpoint-up(sm) {
     .page-header{
 	&.bg-2{
@@ -105,7 +31,112 @@
 	padding-right: 38px;
     }
 }
+@include media-breakpoint-up(md) {
+}
+@media (min-width: 1280px){
+    .row-100{
+	margin-left: -50px;
+	margin-right: -50px;
+	> .col,
+	> [class*="col-"] {
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+    }
+    .row-35{
+	margin-left: -18px;
+	margin-right: -18px;
+	> .col,
+	> [class*="col-"] {
+	    padding-left: 18px;
+	    padding-right: 18px;
+	}
+    }
+    .col-lg-8{
+	.orders{
+	    .shipping-info{
+		padding-top: 2rem;
+		margin-top: 2rem;
+	    }
+	}
+	.products-list{
+	    .product{
+		.img{
+		    flex: 0 0 30%;
+		    max-width: 30%;
+		}
+		.content{
+		    flex: 0 0 47%;
+		    max-width: 47%;
+		}
+		.status{
+		    flex: 0 0 23%;
+		    max-width: 23%;
+		    padding-left: 25px;
+		    padding-right: 25px;
+		}
+	    }
+	}
+    }
+
+    .products-list{
+	.product{
+	    padding: 2.5rem 18px;
+	    .img{
+		text-align: center;
+		img{
+		    width: 100%;
+		    max-width: 170px;
+		}
+	    }
+	}
+    }
+}
 @include media-breakpoint-up(lg) {
+    .col-lg-5-12{
+	flex: 0 0 20%;
+	min-width: 20%;
+    }
+    .post-content{
+	padding: 2rem;
+    }
+    .single-post{
+	.post-img{
+	    margin: 1rem -2rem;
+	}
+    }
+    .inventory{
+	.scroll-y{
+	    height: 1500px;
+	}
+    }
+    .orders{
+	.scroll-y{
+	    height: 1460px;
+	}
+    }
+    .orders-full{
+	.products-list{
+	    .product{
+		.img{
+		    flex: 0 0 20%;
+		    max-width: 20%;
+		}
+		.content{
+		    flex: 0 0 32%;
+		    max-width: 32%;
+		}
+		.shipping-info{
+		    flex: 0 0 32%;
+		    max-width: 32%;
+		}
+		.status{
+		    flex: 0 0 16%;
+		    max-width: 16%;
+		}
+	    }
+	}
+    }
     .payment-options{
 	.amount {
 	    font-size: rem(19px);
@@ -128,6 +159,20 @@
 	}
     }
 }
+@include media-breakpoint-up(xl) {
+    .orders-full{
+	.products-list{
+	    .product{
+		.shipping-info,
+		.status{
+		    padding-left: 25px;
+		    padding-right: 25px;
+		}
+	    }
+	}
+    }
+}
+/*********************************/
 @include media-breakpoint-down(sm) {
     .sidebar,
     .gap-sm{
