@@ -19,8 +19,7 @@
     }
     .products-list{
 	.product{
-	    padding-left: 18px;
-	    padding-right: 18px;
+	    padding: 2.5rem 18px;
 	    .img{
 		flex: 0 0 30%;
 		max-width: 30%;
@@ -42,6 +41,12 @@
 	    }
 	}
     }
+    .orders{
+	.shipping-info{
+	    padding-top: 2rem;
+	    margin-top: 2rem;
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     .col-lg-5-12{
@@ -59,6 +64,11 @@
     .inventory{
 	.scroll-y{
 	    height: 1500px;
+	}
+    }
+    .orders{
+	.scroll-y{
+	    height: 1460px;
 	}
     }
 }
