@@ -812,6 +812,7 @@ img{
 	}
     }
     .networks{
+	max-width: 240px;
 	margin-bottom: .7rem;
 	.row{
 	    margin-left: -1px;
@@ -834,6 +835,18 @@ img{
 		max-height: 11px;
 		margin: auto;
 	    }
+	}
+    }
+}
+.inventory-product-list{
+    .product{
+	margin-bottom: 0;
+	padding: 1rem 0;
+	.row{
+	    align-items: center;
+	}
+	.status{
+	    display: flex;
 	}
     }
 }

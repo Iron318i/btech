@@ -13,8 +13,10 @@ SameHeight.init('.same-height-md', "screen and (min-width: 768px)");
 SameHeight.init('.device-tmpl-1 .device-title');
 SameHeight.init('.device-tmpl-1 .device-img');
 SameHeight.init('.device-tmpl-1 .device-link');
+
 +function ($) {
-// How you want to be Paid temporary script
+
+    // How you want to be Paid temporary script
     $('.payment').on('click', function () {
 	$('.payment-options .payment').removeClass('active');
 	$(this).addClass('active');
@@ -98,11 +100,10 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	checkHeaderHeight();
 	$(window).on('resize', checkHeaderHeight);
     });
-
+    /*malihu-custom-scrollbar-plugin*/
     $(window).on("load", function () {
 	$(".scroll-y").mCustomScrollbar({
-	    setHeight: 500,
-	    // theme: "3d-thick"
+	    setHeight: 1500
 	});
     });
 
