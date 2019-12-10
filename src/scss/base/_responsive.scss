@@ -115,6 +115,11 @@
 	    height: 1460px;
 	}
     }
+    .notification-list{
+	.scroll-y{
+	    height: 926px;
+	}
+    }
     .orders-full{
 	.products-list{
 	    .product{
@@ -156,6 +161,12 @@
     #allProductsMenu{
 	.sub-menu-wrp {
 	    padding: rem(20px 30px);
+	}
+    }
+    .categories-list{
+	.category{
+	    padding-top: 1.2rem;
+	    padding-bottom: 1.2rem;
 	}
     }
 }

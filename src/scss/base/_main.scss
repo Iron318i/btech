@@ -1158,3 +1158,29 @@ img{
 	padding: rem(2px 10px);
     }
 }
+.notification-list{
+    .scroll-y{
+	height: 325px;
+    }
+}
+.notification-item{
+    .row{
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	.h4{
+	    margin-bottom: 0;
+	    font-size: 17px;
+	    font-weight: 700;
+	}
+    }
+    .date{
+	font-size: 11px;
+	color: #999;
+    }
+    a{
+	font-size: 11px;
+	text-decoration: underline;
+	margin-bottom: .5rem;
+    }
+}
