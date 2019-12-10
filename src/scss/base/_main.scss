@@ -1144,6 +1144,7 @@ img{
     border-width: 2px;
     border-right: 2px solid $list-group-active-border-color;
     border-left: 2px solid $list-group-active-border-color;
+    color: $body-color;
 }
 .vendor-item{
     font-size: 12px;
@@ -1199,5 +1200,10 @@ img{
 	text-decoration: underline;
 	margin-bottom: .5rem;
 	font-weight: 400;
+    }
+}
+.list-group.striped{
+    .list-group-item:nth-child(odd){
+	background-color: #f9f9f9;
     }
 }
