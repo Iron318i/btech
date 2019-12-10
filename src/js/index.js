@@ -105,4 +105,12 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	$(".scroll-y").mCustomScrollbar({});
     });
 
+    /*Category Page*/
+    $('.more-filters-show').on('click', function (event) {
+	console.log('!!!!!!!!!!!!');
+	event.preventDefault();
+	$(this).siblings('.more-filter-block').show();
+	$(this).remove();
+    });
+
 }(jQuery);
