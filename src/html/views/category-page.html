@@ -1,0 +1,177 @@
+<% var data = {
+title: "Category page | Btech",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<section class="section">
+    <div class="container">
+	<div class="featured-products">
+	    <h2 class="h2">Featured Products</h2>
+	    <div class="row ">
+		<!-- Product 1 -->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+		    <%= _.template(require('./../includes/product.html').default)({image: "1"}) %>
+		</div>
+		<!-- Product 2 -->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+		    <%= _.template(require('./../includes/product.html').default)({image: "2"}) %>
+		</div>
+		<!-- Product 3 -->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+		    <%= _.template(require('./../includes/product.html').default)({image: "3"}) %>
+		</div>
+		<!-- Product 4 -->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+		    <%= _.template(require('./../includes/product.html').default)({image: "4"}) %>
+		</div>
+	    </div>
+	</div> <!-- .featured-products -->
+	<div class="category-list">
+	    <div class="sort-block my-3">
+		<div class="form-inline justify-content-end">
+		    <label class="mr-2">SORT BY:</label>
+		    <select class="form-control" style="min-width: 18rem">
+			<option>Best sales</option>
+			<option>New</option>
+			<option>Price</option>
+		    </select>
+		</div>
+	    </div>
+	    <div class="row ">
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 product-filters">
+		    <p class="fsz-16">3312 products</p>
+		    <div class="product-filter">
+			<h4 class="filter-title">Delivered in business days</h4>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="business-days-1" checked>
+			    <label class="custom-control-label" for="business-days-1">All</label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="business-days-2">
+			    <label class="custom-control-label" for="business-days-2">One day <span class="count">202</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="business-days-3">
+			    <label class="custom-control-label" for="business-days-3">Two days <span class="count">2638</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="business-days-4">
+			    <label class="custom-control-label" for="business-days-4">Three days<span class="count">3111</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="business-days-5">
+			    <label class="custom-control-label" for="business-days-5">More than three days<span class="count">201</span></label>
+			</div>
+		    </div>
+		    <div class="product-filter">
+			<h4 class="filter-title">Model</h4>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-1" checked>
+			    <label class="custom-control-label" for="filter-model-1">All</label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-2">
+			    <label class="custom-control-label" for="filter-model-2">iPhone 11<span class="count">346</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-3">
+			    <label class="custom-control-label" for="filter-model-3">iPhone 11 Pro<span class="count">375</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-4">
+			    <label class="custom-control-label" for="filter-model-4">iPhone 11 Pro Max<span class="count">257</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-5">
+			    <label class="custom-control-label" for="filter-model-5">iPhone XS<span class="count">185</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-6">
+			    <label class="custom-control-label" for="filter-model-6">iPhone XS Max<span class="count">54</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-7">
+			    <label class="custom-control-label" for="filter-model-7">iPhone XR<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-8">
+			    <label class="custom-control-label" for="filter-model-8">iPhone X<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-9">
+			    <label class="custom-control-label" for="filter-model-9">iPhone 8<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-10">
+			    <label class="custom-control-label" for="filter-model-10">iPhone 8 Plus<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-11">
+			    <label class="custom-control-label" for="filter-model-11">iPhone 7<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-12">
+			    <label class="custom-control-label" for="filter-model-12">iPhone 7 Plus<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-13">
+			    <label class="custom-control-label" for="filter-model-13">iPhone SE<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-14">
+			    <label class="custom-control-label" for="filter-model-14">iPhone 6s<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-15">
+			    <label class="custom-control-label" for="filter-model-15">iPhone 6s Plus<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-16">
+			    <label class="custom-control-label" for="filter-model-16">iPhone 6<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-17">
+			    <label class="custom-control-label" for="filter-model-17">iPhone 6 Plus<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-18">
+			    <label class="custom-control-label" for="filter-model-18">iPhone 5C<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-19">
+			    <label class="custom-control-label" for="filter-model-19">iPhone 5s<span class="count">53</span></label>
+			</div>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="filter-model-20">
+			    <label class="custom-control-label" for="filter-model-20">iPhone 5<span class="count">53</span></label>
+			</div>
+		    </div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-9">
+		    <div class="row">
+			<div class="col-12 col-sm-6 col-md-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "1"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "2"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "3"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "4"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "5"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "6"}) %>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div> <!-- .category-list -->
+    </div> <!-- .container -->
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
