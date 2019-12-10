@@ -1114,6 +1114,7 @@ img{
 /*INVENTORY*/
 .card{
     .card-header{
+	position: relative;
 	border-radius: 0;
 	border-color: $gray-700;
 	background-color: $gray-700;
@@ -1121,6 +1122,21 @@ img{
 	    font-weight: 300;
 	    color: #fff;
 	    margin-bottom: 0;
+	}
+	.counter{
+	    position: absolute;
+	    width: rem(29px);
+	    height: rem(29px);
+	    transform: translateY(-50%);
+	    top: 50%;
+	    right: 10px;
+	    color: #000;
+	    font-size: rem(18px);
+	    font-weight: 400;
+	    line-height: rem(29px);
+	    text-align: center;
+	    background-color: #fff;
+	    border-radius: 50%;
 	}
     }
 }
@@ -1182,5 +1198,6 @@ img{
 	font-size: 11px;
 	text-decoration: underline;
 	margin-bottom: .5rem;
+	font-weight: 400;
     }
 }
