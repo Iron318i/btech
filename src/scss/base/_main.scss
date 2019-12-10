@@ -1256,3 +1256,14 @@ img{
 	}
     }
 }
+.about-facts{
+    text-align: center;
+    .h3{
+	font-weight: 400;
+	line-height: 1.2;
+    }
+    p{
+	color: $gray-500;
+	line-height: 1.5;
+    }
+}
