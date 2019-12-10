@@ -32,6 +32,20 @@
     }
 }
 @include media-breakpoint-up(md) {
+    .about-steps{
+	.step{
+	    .img{
+		flex: 0 0 136px;
+	    }
+	    .content{
+		padding: rem(0 35px);
+		font-size: 13px;
+	    }
+	    .title{
+		font-size: rem(22px);
+	    }
+	}
+    }
 }
 @media (min-width: 1280px){
     .row-100{

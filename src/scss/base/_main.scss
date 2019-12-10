@@ -1294,3 +1294,25 @@ img{
 	margin: 1rem 0;
     }
 }
+.about-steps{
+    justify-content: center;
+    .step{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	background: $gray-800;
+	color: #a2a2a2;
+	.img{
+	    flex: 0 0 120px;
+	}
+	.content{
+	    padding: rem(0 15px);
+	    font-size: 12px;
+	}
+	.title{
+	    color: #fff;
+	    margin-bottom: .5rem;
+	    font-size: rem(16px);
+	}
+    }
+}
