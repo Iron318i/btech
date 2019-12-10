@@ -1232,6 +1232,7 @@ img{
 	}
     }
     @media(max-width: 767px){
+	overflow: hidden;
 	background: #000;
 	.container{
 	    max-width: 100%;
@@ -1265,5 +1266,16 @@ img{
     p{
 	color: $gray-500;
 	line-height: 1.5;
+    }
+}
+.dark-about{
+    text-align: center;
+    background:  $gray-800  url(../img/page-header-bg-3.jpg) 50% no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+    .h2{
+	color: #fff;
+	margin: 0;
+	font-size: rem(20px);
     }
 }
