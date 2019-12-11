@@ -1420,3 +1420,52 @@ img{
 	}
     }
 }
+.reviews-list{
+    .list-group-item{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+    }
+    a{
+	text-decoration: underline;
+    }
+    .info{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1.5rem;
+	.thumbnail{
+	    flex: 0 0 rem(85px);
+	    margin-right: 1rem;
+	    margin-bottom: 1rem;
+	    width: rem(85px);
+	    height: rem(85px);
+	    padding: .5rem;
+	    border: 1px solid #e6e6e6;
+	    display: flex;
+	    img{
+		margin: auto;
+		max-height: 70px;
+	    }
+	}
+	.author{
+	    font-size: 15px;
+	}
+	.date{
+	    font-size: 11px;
+	    color: #999;
+	}
+    }
+}
+.review-details{
+    margin-top: 2rem;
+    .detail{
+	margin-bottom: 1rem;
+    }
+    .title{
+	font-size: 12px;
+	margin-bottom: .5rem;
+    }
+    .rating .icon {
+	height: 11px;
+	width: 11px;
+    }
+}

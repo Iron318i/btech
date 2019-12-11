@@ -193,6 +193,16 @@
 	    padding-bottom: 1.2rem;
 	}
     }
+    .reviews-list .list-group-item{
+	.col-md-3 {
+	    flex: 0 0 29%;
+	    max-width: 29%;
+	}
+	.col-md-9 {
+	    flex: 0 0 71%;
+	    max-width: 71%;
+	}
+    }
 }
 @include media-breakpoint-up(xl) {
     .orders-full{
