@@ -989,11 +989,6 @@ img{
 	justify-content: space-between;
 	align-items: flex-end;
     }
-    .icon{
-	color: #a1a1a1;
-	width: 17px;
-	height: 17px;
-    }
     .date{
 	text-align: right;
 	color: #999;
@@ -1390,5 +1385,38 @@ img{
     }
     .custom-range{
 	max-width: 200px;
+    }
+}
+.rating{
+    font-size: rem(15px);
+    .icon {
+	color: #a1a1a1;
+	width: rem(17px);
+	height: rem(17px);
+	vertical-align: text-top;
+    }
+}
+.rating-statistic{
+    .item{
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	font-size: rem(15px);
+	.stars{
+	    flex: 0 0 25%;
+	}
+	.progress{
+	    flex: 0 0 55%;
+	    margin: 0 .5rem;
+	}
+	.percent{
+	    flex: 0 0 20%;
+	}
+	.progress{
+	    height: 0.4rem;
+	    .progress-bar{
+		background-color: $gray-500;
+	    }
+	}
     }
 }
