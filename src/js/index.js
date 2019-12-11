@@ -107,10 +107,20 @@ SameHeight.init('.device-tmpl-1 .device-link');
 
     /*Category Page*/
     $('.more-filters-show').on('click', function (event) {
-	console.log('!!!!!!!!!!!!');
 	event.preventDefault();
 	$(this).siblings('.more-filter-block').show();
 	$(this).remove();
     });
+
+    /*Price slider*/
+    var slider = document.getElementById("priceRange");
+    var output = document.getElementById("priceRangeValue");
+    output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function () {
+	output.innerHTML = this.value;
+    };
+
 
 }(jQuery);

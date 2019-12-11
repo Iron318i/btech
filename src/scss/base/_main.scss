@@ -167,6 +167,16 @@ select{
     border: $input-border-width solid $input-border-color;
     border-radius: 3px;
 }
+.custom-range {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    }
+}
 img{
     max-width: 100%;
     height: auto;
@@ -1369,5 +1379,16 @@ img{
     }
     .more-filters-show{
 	color: #666;
+    }
+}
+.product-filters{
+    .range-values{
+	display: flex;
+	max-width: 210px;
+	justify-content: space-between;
+	margin-bottom: .5rem;
+    }
+    .custom-range{
+	max-width: 200px;
     }
 }
