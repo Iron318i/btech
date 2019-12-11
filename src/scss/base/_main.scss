@@ -1469,3 +1469,21 @@ img{
 	width: 11px;
     }
 }
+.breadcrumb{
+    border: 1px solid #e6e6e6;
+    a{
+	color: #000;
+    }
+    .breadcrumb-item{
+	padding-top: rem(8px);
+	padding-bottom: rem(8px);
+    }
+    .breadcrumb-item+.breadcrumb-item{
+	background: url(../img/breadcrumb-item-bg.png) left center no-repeat;
+	padding-left: 1rem;
+	margin-left: 0.7rem;
+    }
+    .breadcrumb-item+.breadcrumb-item:before{
+	display: none;
+    }
+}
