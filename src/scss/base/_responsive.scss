@@ -30,6 +30,7 @@
 	padding-left: 38px;
 	padding-right: 38px;
     }
+
 }
 @include media-breakpoint-up(md) {
     .about-steps{
@@ -45,6 +46,15 @@
 		font-size: rem(22px);
 	    }
 	}
+    }
+    .sort-block{
+	justify-content: flex-end;
+	.form-inline {
+	    justify-content: flex-end;
+	}
+    }
+    .product-filters.collapse{
+	display: block;
     }
 }
 @media (min-width: 1280px){
@@ -235,6 +245,15 @@
     }
     .gap-md{
 	margin-top: 2rem;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .sort-block{
+	justify-content: center;
+	text-align: center;
+	.form-inline {
+	    justify-content: center;
+	}
     }
 }
 @media(max-width: 479px){

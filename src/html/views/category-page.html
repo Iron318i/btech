@@ -27,384 +27,420 @@ title: "Category page | Btech",
 	    </div>
 	</div> <!-- .featured-products -->
 	<div class="category-list">
-	    <div class="sort-block my-3">
-		<div class="form-inline justify-content-end">
-		    <label class="mr-2">SORT BY:</label>
-		    <select class="form-control" style="min-width: 18rem">
-			<option>Best sales</option>
-			<option>New</option>
-			<option>Price</option>
-		    </select>
+	    <div class="row sort-block">
+		<div class="col-md-6 my-3">
+		    <div class="form-inline">
+			<label class="mr-2">SORT BY:</label>
+			<select class="form-control" style="min-width: 18rem">
+			    <option>Best sales</option>
+			    <option>New</option>
+			    <option>Price</option>
+			</select>
+		    </div>
+		</div>
+		<div class="col-md-6 d-md-none mb-3">
+		    <button class="btn btn-primary" data-toggle="collapse" data-target=".product-filters">Category Filters</button>
 		</div>
 	    </div>
 	    <div class="row ">
-		<div class="col-12 col-sm-6 col-md-4 col-lg-3 product-filters">
-		    <p class="fsz-16">3312 products</p>
-		    <p><u><a href="#" class="fsz-12">Clear all filters</a></u></p>
-		    <div class="form-group">
-			<h4 class="font-weight-bold">MAX PRICE: $1330</h4>
-			<div class="range-values">
-			    <div class="min">$37</div>
-			    <div class="current">$<span id="priceRangeValue">500</span></div>
+		<div class="col-12 col-md-4 col-lg-3 ">
+		    <div class="product-filters collapse">
+			<div class="product-filter">
+			    <p class="fsz-16">3312 products</p>
+			    <p><u><a href="#" class="fsz-12">Clear all filters</a></u></p>
+			    <div class="form-group">
+				<h4 class="font-weight-bold">MAX PRICE: $1330</h4>
+				<div class="range-values">
+				    <div class="min">$37</div>
+				    <div class="current">$<span id="priceRangeValue">500</span></div>
+				</div>
+				<input type="range" class="custom-range" min="37" max="1330" value="500" id="priceRange">
+			    </div>
 			</div>
-			<input type="range" class="custom-range" min="37" max="1330" value="500" id="priceRange">
+			<div class="product-filter">
+			    <h4 class="filter-title">Delivered in business days</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="business-days-1" checked>
+				<label class="custom-control-label" for="business-days-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="business-days-2">
+				<label class="custom-control-label" for="business-days-2">One day <span class="count">202</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="business-days-3">
+				<label class="custom-control-label" for="business-days-3">Two days <span class="count">2638</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="business-days-4">
+				<label class="custom-control-label" for="business-days-4">Three days<span class="count">3111</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="business-days-5">
+				<label class="custom-control-label" for="business-days-5">More than three days<span class="count">201</span></label>
+			    </div>
+			</div>
+			<div class="product-filter"> <!-- Model -->
+			    <h4 class="filter-title">Model</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-model-1" checked>
+				<label class="custom-control-label" for="filter-model-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-model-2">
+				<label class="custom-control-label" for="filter-model-2">iPhone 11<span class="count">346</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-model-3">
+				<label class="custom-control-label" for="filter-model-3">iPhone 11 Pro<span class="count">375</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-model-4">
+				<label class="custom-control-label" for="filter-model-4">iPhone 11 Pro Max<span class="count">257</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-model-5">
+				<label class="custom-control-label" for="filter-model-5">iPhone XS<span class="count">185</span></label>
+			    </div>
+			    <div class="more-filter-block" style="display: none;">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-6">
+				    <label class="custom-control-label" for="filter-model-6">iPhone XS Max<span class="count">54</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-7">
+				    <label class="custom-control-label" for="filter-model-7">iPhone XR<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-8">
+				    <label class="custom-control-label" for="filter-model-8">iPhone X<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-9">
+				    <label class="custom-control-label" for="filter-model-9">iPhone 8<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-10">
+				    <label class="custom-control-label" for="filter-model-10">iPhone 8 Plus<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-11">
+				    <label class="custom-control-label" for="filter-model-11">iPhone 7<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-12">
+				    <label class="custom-control-label" for="filter-model-12">iPhone 7 Plus<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-13">
+				    <label class="custom-control-label" for="filter-model-13">iPhone SE<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-14">
+				    <label class="custom-control-label" for="filter-model-14">iPhone 6s<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-15">
+				    <label class="custom-control-label" for="filter-model-15">iPhone 6s Plus<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-16">
+				    <label class="custom-control-label" for="filter-model-16">iPhone 6<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-17">
+				    <label class="custom-control-label" for="filter-model-17">iPhone 6 Plus<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-18">
+				    <label class="custom-control-label" for="filter-model-18">iPhone 5C<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-19">
+				    <label class="custom-control-label" for="filter-model-19">iPhone 5s<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-model-20">
+				    <label class="custom-control-label" for="filter-model-20">iPhone 5<span class="count">53</span></label>
+				</div>
+			    </div>
+			    <a href="#" class="more-filters-show">+ More</a>
+			</div> <!-- Model -->
+			<div class="product-filter"> <!-- I want a phone for... -->
+			    <h4 class="filter-title">I want a phone for...</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-want-phone-1" checked>
+				<label class="custom-control-label" for="filter-want-phone-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-want-phone-2">
+				<label class="custom-control-label" for="filter-want-phone-2">Rogers<span class="count">346</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-want-phone-3">
+				<label class="custom-control-label" for="filter-want-phone-3">Bell<span class="count">375</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-want-phone-4">
+				<label class="custom-control-label" for="filter-want-phone-4">Telus<span class="count">257</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-want-phone-5">
+				<label class="custom-control-label" for="filter-want-phone-5">Fido<span class="count">185</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-want-phone-6">
+				<label class="custom-control-label" for="filter-want-phone-6">Koodo <span class="count">54</span></label>
+			    </div>
+			    <div class="more-filter-block" style="display: none;">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-want-phone-7">
+				    <label class="custom-control-label" for="filter-want-phone-7">Bell 2<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-want-phone-8">
+				    <label class="custom-control-label" for="filter-want-phone-8">Telus 2<span class="count">53</span></label>
+				</div>
+			    </div>
+			    <a href="#" class="more-filters-show">+ More</a>
+			</div> <!-- I want a phone for... -->
+			<div class="product-filter"> <!-- ... And that is  -->
+			    <h4 class="filter-title">... And that is </h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-and-that-1" checked>
+				<label class="custom-control-label" for="filter-and-that-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-and-that-2">
+				<label class="custom-control-label" for="filter-and-that-2">Locked or Unlocked<span class="count">3312</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-and-that-3">
+				<label class="custom-control-label" for="filter-and-that-3">Unlocked only<span class="count">1437</span></label>
+			    </div>
+			</div> <!-- ... And that is  -->
+			<div class="product-filter"> <!-- Storage (GB) -->
+			    <h4 class="filter-title">Storage (GB)</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-storage-1" checked>
+				<label class="custom-control-label" for="filter-storage-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-storage-2">
+				<label class="custom-control-label" for="filter-storage-2">16 GB <span class="count">346</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-storage-3">
+				<label class="custom-control-label" for="filter-storage-3">32 GB <span class="count">375</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-storage-4">
+				<label class="custom-control-label" for="filter-storage-4">64 GB<span class="count">257</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-storage-5">
+				<label class="custom-control-label" for="filter-storage-5">128 GB<span class="count">185</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-storage-6">
+				<label class="custom-control-label" for="filter-storage-6">256 GB<span class="count">54</span></label>
+			    </div>
+			    <div class="more-filter-block" style="display: none;">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-storage-7">
+				    <label class="custom-control-label" for="filter-storage-7">512 GB<span class="count">53</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-storage-8">
+				    <label class="custom-control-label" for="filter-storage-8">1024 GB<span class="count">53</span></label>
+				</div>
+			    </div>
+			    <a href="#" class="more-filters-show">+ More</a>
+			</div> <!-- Storage (GB) -->
+			<div class="product-filter"> <!-- Grade -->
+			    <h4 class="filter-title">Grade</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-grade-1" checked>
+				<label class="custom-control-label" for="filter-grade-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-grade-2">
+				<label class="custom-control-label" for="filter-grade-2">Refurbished<span class="count">346</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-grade-3">
+				<label class="custom-control-label" for="filter-grade-3">Grade A<span class="count">375</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-grade-4">
+				<label class="custom-control-label" for="filter-grade-4">Grade B<span class="count">257</span></label>
+			    </div>
+			</div> <!-- Grade -->
+			<div class="product-filter"> <!-- Color -->
+			    <h4 class="filter-title">Color</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-color-1" checked>
+				<label class="custom-control-label" for="filter-color-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-color-2">
+				<label class="custom-control-label" for="filter-color-2">Space Gray<span class="count">780</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-color-3">
+				<label class="custom-control-label" for="filter-color-3">Silver<span class="count">725</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-color-4">
+				<label class="custom-control-label" for="filter-color-4">Gold<span class="count">704</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-color-5">
+				<label class="custom-control-label" for="filter-color-5">Rose Gold<span class="count">426</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-color-6">
+				<label class="custom-control-label" for="filter-color-6">Black<span class="count">220</span></label>
+			    </div>
+			    <div class="more-filter-block" style="display: none;">
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-color-7">
+				    <label class="custom-control-label" for="filter-color-7">Red <span class="count">179</span></label>
+				</div>
+				<div class="custom-control custom-checkbox">
+				    <input type="checkbox" class="custom-control-input" id="filter-color-8">
+				    <label class="custom-control-label" for="filter-color-8">Blue<span class="count">53</span></label>
+				</div>
+			    </div>
+			    <a href="#" class="more-filters-show">+ More</a>
+			</div> <!-- Color -->
+			<div class="product-filter"> <!-- Warranty -->
+			    <h4 class="filter-title">Warranty</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-warranty-1" checked>
+				<label class="custom-control-label" for="filter-warranty-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-warranty-2">
+				<label class="custom-control-label" for="filter-warranty-2">12 months<span class="count">2962</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-warranty-3">
+				<label class="custom-control-label" for="filter-warranty-3">24 months<span class="count">725</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-warranty-4">
+				<label class="custom-control-label" for="filter-warranty-4">36 months<span class="count">304</span></label>
+			    </div>
+			</div> <!-- Warranty -->
+			<div class="product-filter"> <!-- Method of Payment -->
+			    <h4 class="filter-title">Method of Payment</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-payment-1" checked>
+				<label class="custom-control-label" for="filter-payment-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-payment-2">
+				<label class="custom-control-label" for="filter-payment-2">Credit card<span class="count">3312</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-payment-3">
+				<label class="custom-control-label" for="filter-payment-3">PayPal<span class="count">2845</span></label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-payment-4">
+				<label class="custom-control-label" for="filter-payment-4">Klarna<span class="count">7331</span></label>
+			    </div>
+			</div> <!-- Method of Payment -->
+			<div class="product-filter"> <!-- Free shipping -->
+			    <h4 class="filter-title">Free shipping</h4>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-shipping-1" checked>
+				<label class="custom-control-label" for="filter-shipping-1">All</label>
+			    </div>
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="filter-shipping-2">
+				<label class="custom-control-label" for="filter-shipping-2">Credit card<span class="count">3312</span></label>
+			    </div>
+			</div> <!-- Free shipping -->
 		    </div>
-		    <div class="product-filter">
-			<h4 class="filter-title">Delivered in business days</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="business-days-1" checked>
-			    <label class="custom-control-label" for="business-days-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="business-days-2">
-			    <label class="custom-control-label" for="business-days-2">One day <span class="count">202</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="business-days-3">
-			    <label class="custom-control-label" for="business-days-3">Two days <span class="count">2638</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="business-days-4">
-			    <label class="custom-control-label" for="business-days-4">Three days<span class="count">3111</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="business-days-5">
-			    <label class="custom-control-label" for="business-days-5">More than three days<span class="count">201</span></label>
-			</div>
-		    </div>
-		    <div class="product-filter"> <!-- Model -->
-			<h4 class="filter-title">Model</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-model-1" checked>
-			    <label class="custom-control-label" for="filter-model-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-model-2">
-			    <label class="custom-control-label" for="filter-model-2">iPhone 11<span class="count">346</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-model-3">
-			    <label class="custom-control-label" for="filter-model-3">iPhone 11 Pro<span class="count">375</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-model-4">
-			    <label class="custom-control-label" for="filter-model-4">iPhone 11 Pro Max<span class="count">257</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-model-5">
-			    <label class="custom-control-label" for="filter-model-5">iPhone XS<span class="count">185</span></label>
-			</div>
-			<div class="more-filter-block" style="display: none;">
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-6">
-				<label class="custom-control-label" for="filter-model-6">iPhone XS Max<span class="count">54</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-7">
-				<label class="custom-control-label" for="filter-model-7">iPhone XR<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-8">
-				<label class="custom-control-label" for="filter-model-8">iPhone X<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-9">
-				<label class="custom-control-label" for="filter-model-9">iPhone 8<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-10">
-				<label class="custom-control-label" for="filter-model-10">iPhone 8 Plus<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-11">
-				<label class="custom-control-label" for="filter-model-11">iPhone 7<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-12">
-				<label class="custom-control-label" for="filter-model-12">iPhone 7 Plus<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-13">
-				<label class="custom-control-label" for="filter-model-13">iPhone SE<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-14">
-				<label class="custom-control-label" for="filter-model-14">iPhone 6s<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-15">
-				<label class="custom-control-label" for="filter-model-15">iPhone 6s Plus<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-16">
-				<label class="custom-control-label" for="filter-model-16">iPhone 6<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-17">
-				<label class="custom-control-label" for="filter-model-17">iPhone 6 Plus<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-18">
-				<label class="custom-control-label" for="filter-model-18">iPhone 5C<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-19">
-				<label class="custom-control-label" for="filter-model-19">iPhone 5s<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-model-20">
-				<label class="custom-control-label" for="filter-model-20">iPhone 5<span class="count">53</span></label>
-			    </div>
-			</div>
-			<a href="#" class="more-filters-show">+ More</a>
-		    </div> <!-- Model -->
-		    <div class="product-filter"> <!-- I want a phone for... -->
-			<h4 class="filter-title">I want a phone for...</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-want-phone-1" checked>
-			    <label class="custom-control-label" for="filter-want-phone-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-want-phone-2">
-			    <label class="custom-control-label" for="filter-want-phone-2">Rogers<span class="count">346</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-want-phone-3">
-			    <label class="custom-control-label" for="filter-want-phone-3">Bell<span class="count">375</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-want-phone-4">
-			    <label class="custom-control-label" for="filter-want-phone-4">Telus<span class="count">257</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-want-phone-5">
-			    <label class="custom-control-label" for="filter-want-phone-5">Fido<span class="count">185</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-want-phone-6">
-			    <label class="custom-control-label" for="filter-want-phone-6">Koodo <span class="count">54</span></label>
-			</div>
-			<div class="more-filter-block" style="display: none;">
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-want-phone-7">
-				<label class="custom-control-label" for="filter-want-phone-7">Bell 2<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-want-phone-8">
-				<label class="custom-control-label" for="filter-want-phone-8">Telus 2<span class="count">53</span></label>
-			    </div>
-			</div>
-			<a href="#" class="more-filters-show">+ More</a>
-		    </div> <!-- I want a phone for... -->
-		    <div class="product-filter"> <!-- ... And that is  -->
-			<h4 class="filter-title">... And that is </h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-and-that-1" checked>
-			    <label class="custom-control-label" for="filter-and-that-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-and-that-2">
-			    <label class="custom-control-label" for="filter-and-that-2">Locked or Unlocked<span class="count">3312</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-and-that-3">
-			    <label class="custom-control-label" for="filter-and-that-3">Unlocked only<span class="count">1437</span></label>
-			</div>
-		    </div> <!-- ... And that is  -->
-		    <div class="product-filter"> <!-- Storage (GB) -->
-			<h4 class="filter-title">Storage (GB)</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-storage-1" checked>
-			    <label class="custom-control-label" for="filter-storage-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-storage-2">
-			    <label class="custom-control-label" for="filter-storage-2">16 GB <span class="count">346</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-storage-3">
-			    <label class="custom-control-label" for="filter-storage-3">32 GB <span class="count">375</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-storage-4">
-			    <label class="custom-control-label" for="filter-storage-4">64 GB<span class="count">257</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-storage-5">
-			    <label class="custom-control-label" for="filter-storage-5">128 GB<span class="count">185</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-storage-6">
-			    <label class="custom-control-label" for="filter-storage-6">256 GB<span class="count">54</span></label>
-			</div>
-			<div class="more-filter-block" style="display: none;">
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-storage-7">
-				<label class="custom-control-label" for="filter-storage-7">512 GB<span class="count">53</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-storage-8">
-				<label class="custom-control-label" for="filter-storage-8">1024 GB<span class="count">53</span></label>
-			    </div>
-			</div>
-			<a href="#" class="more-filters-show">+ More</a>
-		    </div> <!-- Storage (GB) -->
-		    <div class="product-filter"> <!-- Grade -->
-			<h4 class="filter-title">Grade</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-grade-1" checked>
-			    <label class="custom-control-label" for="filter-grade-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-grade-2">
-			    <label class="custom-control-label" for="filter-grade-2">Refurbished<span class="count">346</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-grade-3">
-			    <label class="custom-control-label" for="filter-grade-3">Grade A<span class="count">375</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-grade-4">
-			    <label class="custom-control-label" for="filter-grade-4">Grade B<span class="count">257</span></label>
-			</div>
-		    </div> <!-- Grade -->
-		    <div class="product-filter"> <!-- Color -->
-			<h4 class="filter-title">Color</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-color-1" checked>
-			    <label class="custom-control-label" for="filter-color-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-color-2">
-			    <label class="custom-control-label" for="filter-color-2">Space Gray<span class="count">780</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-color-3">
-			    <label class="custom-control-label" for="filter-color-3">Silver<span class="count">725</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-color-4">
-			    <label class="custom-control-label" for="filter-color-4">Gold<span class="count">704</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-color-5">
-			    <label class="custom-control-label" for="filter-color-5">Rose Gold<span class="count">426</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-color-6">
-			    <label class="custom-control-label" for="filter-color-6">Black<span class="count">220</span></label>
-			</div>
-			<div class="more-filter-block" style="display: none;">
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-color-7">
-				<label class="custom-control-label" for="filter-color-7">Red <span class="count">179</span></label>
-			    </div>
-			    <div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input" id="filter-color-8">
-				<label class="custom-control-label" for="filter-color-8">Blue<span class="count">53</span></label>
-			    </div>
-			</div>
-			<a href="#" class="more-filters-show">+ More</a>
-		    </div> <!-- Color -->
-		    <div class="product-filter"> <!-- Warranty -->
-			<h4 class="filter-title">Warranty</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-warranty-1" checked>
-			    <label class="custom-control-label" for="filter-warranty-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-warranty-2">
-			    <label class="custom-control-label" for="filter-warranty-2">12 months<span class="count">2962</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-warranty-3">
-			    <label class="custom-control-label" for="filter-warranty-3">24 months<span class="count">725</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-warranty-4">
-			    <label class="custom-control-label" for="filter-warranty-4">36 months<span class="count">304</span></label>
-			</div>
-		    </div> <!-- Warranty -->
-		    <div class="product-filter"> <!-- Method of Payment -->
-			<h4 class="filter-title">Method of Payment</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-payment-1" checked>
-			    <label class="custom-control-label" for="filter-payment-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-payment-2">
-			    <label class="custom-control-label" for="filter-payment-2">Credit card<span class="count">3312</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-payment-3">
-			    <label class="custom-control-label" for="filter-payment-3">PayPal<span class="count">2845</span></label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-payment-4">
-			    <label class="custom-control-label" for="filter-payment-4">Klarna<span class="count">7331</span></label>
-			</div>
-		    </div> <!-- Method of Payment -->
-		    <div class="product-filter"> <!-- Free shipping -->
-			<h4 class="filter-title">Free shipping</h4>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-shipping-1" checked>
-			    <label class="custom-control-label" for="filter-shipping-1">All</label>
-			</div>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="filter-shipping-2">
-			    <label class="custom-control-label" for="filter-shipping-2">Credit card<span class="count">3312</span></label>
-			</div>
-		    </div> <!-- Free shipping -->
 		</div>
-		<div class="col-12 col-sm-6 col-md-4 col-lg-9">
+		<div class="col-12 col-md-8 col-lg-9">
 		    <div class="row">
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "1"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "2"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "3"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "4"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "5"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "6"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "7"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "8"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "1"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "2"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "3"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "4"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "5"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "6"}) %>
 			</div>
-			<div class="col-12 col-sm-6 col-md-4">
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
 			    <%= _.template(require('./../includes/product.html').default)({image: "7"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "8"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "1"}) %>
+			</div>
+			<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+			    <%= _.template(require('./../includes/product.html').default)({image: "2"}) %>
 			</div>
 		    </div>
 		</div>
+	    </div>
+	    <div class="mt-4">
+		<nav aria-label="Page navigation">
+		    <ul class="pagination">
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+			<li class="page-item"><a class="page-link" href="#">...</a></li>
+			<li class="page-item"><a class="page-link" href="#">33</a></li>
+			<li class="page-item">
+			    <a class="page-link" href="#" aria-label="Next">
+				<span aria-hidden="true">&gt;</span>
+			    </a>
+			</li>
+		    </ul>
+		</nav>
 	    </div>
 	</div> <!-- .category-list -->
     </div> <!-- .container -->
