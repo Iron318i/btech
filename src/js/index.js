@@ -6,14 +6,13 @@ import 'owl.carousel';
 import 'jquery-mousewheel';
 import 'malihu-custom-scrollbar-plugin';
 import '@fancyapps/fancybox';
-
+import "chart.js";
 var SameHeight = require('same-height');
 SameHeight.init('.same-height-md', "screen and (min-width: 768px)");
 /*device-tmpl-1*/
 SameHeight.init('.device-tmpl-1 .device-title');
 SameHeight.init('.device-tmpl-1 .device-img');
 SameHeight.init('.device-tmpl-1 .device-link');
-
 +function ($) {
 
     // How you want to be Paid temporary script
@@ -81,7 +80,6 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    }
 	}
     });
-
     $('#mobileMenuTogller').on('click', function (evt) {
 	evt.preventDefault();
 	$('.site-header .main-menu').toggleClass('show');
@@ -104,14 +102,12 @@ SameHeight.init('.device-tmpl-1 .device-link');
     });
     $(document).on('click', function (e) {
 	var menu_opened = $('#allProductsMenu').hasClass('show');
-
 	if (!$(e.target).closest('#allProductsMenu').length &&
 		!$(e.target).is('#allProductsMenu') &&
 		menu_opened === true) {
 	    $('#allProductsMenu').collapse('toggle');
 	}
     });
-
     function checkHeaderHeight() {
 	var headerHeight = $('.site-header').height();
 	$("#allProductsMenu").css('top', headerHeight);
@@ -125,14 +121,12 @@ SameHeight.init('.device-tmpl-1 .device-link');
     $(window).on("load", function () {
 	$(".scroll-y").mCustomScrollbar({});
     });
-
     /*Category Page*/
     $('.more-filters-show').on('click', function (event) {
 	event.preventDefault();
 	$(this).siblings('.more-filter-block').show();
 	$(this).remove();
     });
-
     /*Price slider*/
     var slider = document.getElementById("priceRange");
     if (slider) {
@@ -144,6 +138,47 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    output.innerHTML = this.value;
 	};
     }
+
+//24h Consumption (KW)
+    if ($("canvas").is("#chartOverview")) {
+	var ctx = document.getElementById('chartOverview');
+	var chart = new Chart(ctx, {
+	    // The type of chart we want to create
+	    type: 'line',
+	    // The data for our dataset
+	    data: {
+		labels: ['Jul 01', 'Jul 02', 'Jul 03', 'Jul 04', 'Jul 05', 'Jul 06', 'Jul 04', 'Jul 06', 'Jul 09', 'Jul 09', 'Jul 10', 'Jul 11', 'Jul 12', 'Jul 13', 'Jul 14', 'Jul 15', 'Jul 16', 'Jul 17', 'Jul 18', 'Jul 19', 'Jul 20', 'Jul 21', 'Jul 22', 'Jul 23', 'Jul 24', 'Jul 25', 'Jul 26', 'Jul 27', 'Jul 28', 'Jul 29', 'Jul 30', 'Jul 31'],
+		datasets: [{
+			lineTension: 0,
+			borderWidth: 2,
+			label: '',
+			pointRadius: 6,
+			pointBackgroundColor: '#ffffff',
+			fill: true,
+			borderColor: '#bebebe',
+			backgroundColor: 'rgba(65, 64, 66, .17)',
+			data: [0, 10, 15, 12, 25, 4, 20, 15, 4, 18, 30, 40, 22, 18, 16, 10, 3, 17, 28, 32, 15, 10, 8, 14, 19, 27, 31, 22, 16, 10, 12, 12]
+		    }]
+	    },
+	    // Configuration options go here
+	    options: {
+		responsive: true,
+		maintainAspectRatio: false,
+		legend: {
+		    display: false
+		},
+		tooltips: {
+		    mode: 'index',
+		    intersect: false
+		},
+		hover: {
+		    mode: 'index',
+		    intersect: false
+		}
+	    }
+
+	});
+    }//is("#chartMonthlyConsumption")
 
 
 }(jQuery);
