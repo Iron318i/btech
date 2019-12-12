@@ -1588,6 +1588,21 @@ img{
 	    }
 	}
     }
+    .product-gallery{
+	margin: 1rem auto;
+	.owl-nav {
+	    .icon{
+		vertical-align: baseline;
+	    }
+	    .owl-prev {
+		left: -.7rem;
+
+	    }
+	    .owl-next {
+		right: -.7rem;
+	    }
+	}
+    }
 }
 .color-variant{
     i{

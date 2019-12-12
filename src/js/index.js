@@ -61,6 +61,27 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    }
 	}
     });
+    $('.product-gallery.owl-carousel').owlCarousel({
+	loop: false,
+	nav: true,
+	dots: false,
+	responsiveClass: true,
+	navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>'],
+	responsive: {
+	    0: {
+		nav: false,
+		dots: true,
+		items: 4,
+		margin: 5
+	    },
+	    576: {
+		items: 3,
+		nav: true,
+		margin: 10
+	    }
+	}
+    });
+
     $('#mobileMenuTogller').on('click', function (evt) {
 	evt.preventDefault();
 	$('.site-header .main-menu').toggleClass('show');

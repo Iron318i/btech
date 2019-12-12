@@ -62,7 +62,13 @@
     .product-filters.collapse{
 	display: block;
     }
-
+    .single-product{
+	.product-gallery{
+	    max-width: 270px;
+	    margin: 3rem auto 1rem;
+	    padding: 0 2rem;
+	}
+    }
 }
 @media (min-width: 1280px){
     .row-100{
