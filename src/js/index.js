@@ -5,7 +5,7 @@ import dropzone from "dropzone";
 import 'owl.carousel';
 import 'jquery-mousewheel';
 import 'malihu-custom-scrollbar-plugin';
-//import bootstrap-touchspin from "bootstrap-touchspin";
+import '@fancyapps/fancybox';
 
 var SameHeight = require('same-height');
 SameHeight.init('.same-height-md', "screen and (min-width: 768px)");
