@@ -31,7 +31,7 @@
 .btn{
     text-transform: uppercase;
 }
-.btn-lg{
+.btn-lg:not(.btn-block){
     min-width: rem(220px);
 }
 .btn-outline-info {
@@ -1600,6 +1600,19 @@ img{
 	    }
 	    .owl-next {
 		right: -.7rem;
+	    }
+	}
+    }
+    .product-btns{
+	.btns-block{
+	    width: 100%;
+	    background-color: white;
+	    border: 1px solid #e6e6e6;
+	    border-radius: 3px;
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
+	    padding: 1rem;
+	    .btm+.btn{
+		margin-top: 10px;
 	    }
 	}
     }
