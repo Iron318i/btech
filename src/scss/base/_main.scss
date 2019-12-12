@@ -184,6 +184,11 @@ img{
 .card {
     width: 100%;
 }
+.dropdown-menu{
+    .dropdown-item+.dropdown-item{
+	border-top: 1px solid $gray-200;
+    }
+}
 /*dropzone*/
 .dropzone{
     background: transparent;
