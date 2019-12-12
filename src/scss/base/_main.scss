@@ -1616,6 +1616,23 @@ img{
 	    }
 	}
     }
+    .product-tabs{
+	border-top: 1px solid #e6e6e6;
+	padding-top: 20px;
+	margin-top: 20px;
+	.nav-link{
+	    text-align: center;
+	    font-size: 12px;
+	    padding: rem(11px);
+	}
+	.nav-link:not(.active){
+	    color: #000;
+	    background-color: #dedede;
+	}
+	.tab-content{
+	    color: $gray-500;
+	}
+    }
 }
 .color-variant{
     i{
