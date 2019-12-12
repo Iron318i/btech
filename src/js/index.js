@@ -139,7 +139,7 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	};
     }
 
-//24h Consumption (KW)
+//chartOverview
     if ($("canvas").is("#chartOverview")) {
 	var ctx = document.getElementById('chartOverview');
 	var chart = new Chart(ctx, {
@@ -157,7 +157,7 @@ SameHeight.init('.device-tmpl-1 .device-link');
 			fill: true,
 			borderColor: '#bebebe',
 			backgroundColor: 'rgba(65, 64, 66, .17)',
-			data: [0, 10, 15, 12, 25, 4, 20, 15, 4, 18, 30, 40, 22, 18, 16, 10, 3, 17, 28, 32, 15, 10, 8, 14, 19, 27, 31, 22, 16, 10, 12, 12]
+			data: [0, 10, 15, 12, 25, 4, 20, 15, 10, 18, 30, 40, 22, 18, 16, 10, 14, 17, 18, 12, 15, 10, 8, 14, 19, 27, 31, 22, 16, 10, 12, 12]
 		    }]
 	    },
 	    // Configuration options go here
@@ -178,7 +178,46 @@ SameHeight.init('.device-tmpl-1 .device-link');
 	    }
 
 	});
-    }//is("#chartMonthlyConsumption")
+    }// if ($("canvas").is("#chartOverview"))
+//chartPerformance
+    if ($("canvas").is("#chartPerformance")) {
+	var ctx = document.getElementById('chartPerformance');
+	var chart = new Chart(ctx, {
+	    // The type of chart we want to create
+	    type: 'line',
+	    // The data for our dataset
+	    data: {
+		labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
+		datasets: [{
+			lineTension: 0,
+			borderWidth: 2,
+			label: '',
+			pointRadius: 0,
+			fill: true,
+			borderColor: '#bebebe',
+			backgroundColor: 'rgba(65, 64, 66, .17)',
+			data: [40, 30, 48, 40, 60, 80, 60, 40, 20, 45]
+		    }]
+	    },
+	    // Configuration options go here
+	    options: {
+		responsive: true,
+		maintainAspectRatio: false,
+		legend: {
+		    display: false
+		},
+		tooltips: {
+		    mode: 'index',
+		    intersect: false
+		},
+		hover: {
+		    mode: 'index',
+		    intersect: false
+		}
+	    }
+
+	});
+    }//if ($("canvas").is("#chartPerformance"))
 
 
 }(jQuery);
