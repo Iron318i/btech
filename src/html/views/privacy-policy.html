@@ -1,0 +1,79 @@
+<% var data = {
+title: "Privacy Policy | Btech",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="page-header bg-2">
+    <div class="container header-search">
+	<p class="heading">How can we help you?</p>
+	<div class="form-group">
+	    <input class="form-control" type="text" placeholder="Type keywords to find answers">
+	</div>
+	<p class="mt-4">You can also browse the topics below to find what you are looking for.</p>
+    </div>
+</div>
+<section class="section">
+    <div class="container">
+	<div class="row">
+	    <div class="col-lg-3 col-md-4">
+		<h2 class="h2">Summary</h2>
+		<div class="card card-body">
+		    <ul class="faq-menu nav">
+			<li>
+			    <a href="#" class="menu-item">
+				<span class="img">
+				    <img src="./img/icon-faq-5.png" alt="Manage your orders">
+				</span>
+				<span class="text">
+				    <span class="heading">Privacy Policy</span>	
+				    <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>	
+				</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#" class="menu-item">
+				<span class="img">
+				    <img src="./img/icon-faq-6.png" alt="Manage your orders">
+				</span>
+				<span class="text">
+				    <span class="heading">Terms of service</span>	
+				    <span class="description">Proin sapien lacus, consectetur vel neque</span>	
+				</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#" class="menu-item">
+				<span class="img">
+				    <img src="./img/icon-faq-3.png" alt="Manage your orders">
+				</span>
+				<span class="text">
+				    <span class="heading">Return policy</span>	
+				    <span class="description">Nullam commodo enim vitae lacinia cursus.</span>	
+				</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#" class="menu-item mb-2">
+				<span class="img">
+				    <img src="./img/icon-faq-7.png" alt="Manage your orders">
+				</span>
+				<span class="text">
+				    <span class="heading">Product Warranty</span>	
+				    <span class="description">Curabitur suscipit auctor interdum.</span>	
+				</span>
+			    </a>
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	    <div class="col-lg-9 col-md-8 gap-sm">
+		<h2 class="h2">Privacy Policy</h2>
+		<div class="card card-body">
+		    
+		</div>
+	    </div>
+	</div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
