@@ -1605,3 +1605,20 @@ img{
 	background-color: #e1ccb3;
     }
 }
+.single-product-review{
+    justify-content: space-between;
+    .quote-block{
+	border-top: 1px solid $gray-200;
+	padding-top: 4rem;
+    }
+    .info{
+	font-size: 11px;
+	color: $gray-500;
+	margin-bottom: 1rem;
+    }
+    .quote{
+	font-size: rem(20px);
+	font-style: italic;
+	margin-bottom: 1rem;
+    }
+}
