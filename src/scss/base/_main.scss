@@ -28,6 +28,9 @@
 .fsz-18{
     font-size: rem(18px);
 }
+.fsz-20{
+    font-size: rem(18px);
+}
 .btn{
     text-transform: uppercase;
 }
@@ -1719,5 +1722,14 @@ img{
 	.rating{
 	    flex: 0 0 47%;
 	}
+    }
+}
+.text-page{
+    .h3{
+	font-weight: 400;
+    }
+    p{
+	color: #999;
+	line-height: 1.84;
     }
 }

@@ -242,6 +242,10 @@
 	    align-items: center;
 	}
     }
+    .text-page{
+	padding-left: 30px;
+	padding-right: 30px;
+    }
 }
 @include media-breakpoint-up(xl) {
     .orders-full{
