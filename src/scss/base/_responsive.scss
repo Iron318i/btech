@@ -30,7 +30,13 @@
 	padding-left: 38px;
 	padding-right: 38px;
     }
-
+    .single-product{
+	.product-details{
+	    .title{
+		font-size: rem(24px);
+	    }
+	}
+    }
 }
 @include media-breakpoint-up(md) {
     .about-steps{
@@ -55,6 +61,16 @@
     }
     .product-filters.collapse{
 	display: block;
+    }
+    .single-product{
+	.product-imgs {
+	    flex: 0 0 45%;
+	    max-width: 45%;
+	}
+	.product-details {
+	    flex: 0 0 55%;
+	    max-width: 55%;
+	}
     }
 }
 @media (min-width: 1280px){
