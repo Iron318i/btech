@@ -181,6 +181,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+.card {
+    width: 100%;
+}
 /*dropzone*/
 .dropzone{
     background: transparent;
@@ -1668,5 +1671,48 @@ img{
 	font-size: rem(20px);
 	font-style: italic;
 	margin-bottom: 1rem;
+    }
+}
+.orders-statistic{
+    .item+.item{
+	margin-top: rem(10px);
+    }
+    .item{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	.name{
+	    flex: 0 0 60%;
+	    font-size: rem(18px);
+	    font-weight: 300;
+	    color: #333;
+	}
+	.value{
+	    flex: 0 0 40%;
+	    background-color: $gray-100;
+	    border: 1px solid $gray-200;
+	    font-size: rem(25px);
+	    font-weight: 300;
+	    padding: 0 10px;
+	}
+    }
+}
+.rating-customers{
+    .item+.item{
+	margin-top: rem(10px);
+    }
+    .item{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	.name{
+	    flex: 0 0 53%;
+	    font-size: rem(14px);
+	    font-weight: 300;
+	    color: #333;
+	}
+	.rating{
+	    flex: 0 0 47%;
+	}
     }
 }
