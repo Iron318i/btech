@@ -1,0 +1,55 @@
+<% var data = {
+title: "Reports | Btech",
+}; %>
+<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+<%= _.template(require('./../includes/svg-sprite.html').default)(data) %>
+<div class="page-header">
+    <h1 class="h1">Reports</h1>
+</div>
+<section class="section orders">
+    <div class="container">
+	
+	<div class="card">
+	    <div class="card-header">
+		<h2 class="h5">Overview</h2>
+	    </div>
+	    <div class="card-body">
+
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-md-4">
+		<div class="card">
+		    <div class="card-header">
+			<h2 class="h5">Orders</h2>
+		    </div>
+		    <div class="card-body">
+
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-md-4 gap-md">
+		<div class="card">
+		    <div class="card-header">
+			<h2 class="h5">Performance</h2>
+		    </div>
+		    <div class="card-body">
+
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-md-4 gap-md">
+		<div class="card">
+		    <div class="card-header">
+			<h2 class="h5">Rating from customers</h2>
+		    </div>
+		    <div class="card-body">
+
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>
