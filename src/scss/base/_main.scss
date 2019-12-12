@@ -1500,7 +1500,7 @@ img{
 	    margin-bottom: .5rem;
 	}
 	.networks{
-	    margin-bottom: 1rem;
+	    margin-bottom: 1.5rem;
 	    .row{
 		margin-left: -2px;
 		margin-right: -2px;
@@ -1533,7 +1533,7 @@ img{
 	.price{
 	    font-size: rem(24px);
 	    font-weight: 700;
-	    margin-bottom: 1rem;
+	    margin-bottom: 1.5rem;
 	    .old{
 		color: $gray-500;
 		font-weight: 300;
@@ -1544,7 +1544,7 @@ img{
 	    display: flex;
 	    flex-wrap: wrap;
 	    align-items: center;
-	    margin: 1rem 0;
+	    margin: 1rem 0 1.5rem;
 	    >div + div{
 		margin-left: .5rem;
 	    }
@@ -1571,13 +1571,13 @@ img{
 		}
 	    }
 	    .memory{
-		span{
-		    padding: 3px 5px;
-		    background-color: #fff;
-		    border: 1px solid #e6e6e6;
-		}
-		span+span{
-		    margin-left: 5px;
+		.form-control{
+		    background: none;
+		    appearance: menulist;
+		    -moz-appearance: menulist;
+		    -webkit-appearance: menulist;
+		    padding-right: 1rem;
+		    vertical-align: middle;
 		}
 	    }
 	    .info{
