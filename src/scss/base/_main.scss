@@ -450,6 +450,27 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 85%;
+	position: relative;
+	&:before{
+	    content: "";
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 0 8px 10px 8px;
+	    border-color: transparent transparent #fff transparent;
+	    position: absolute;
+	    top: -10px;
+	    left:1.7%;
+	}
+	&.step-2:before{
+	    left:32%;
+	}
+	&.step-3:before{
+	    left:63%;
+	}
+	&.step-4:before{
+	    left:94%;
+	}
     }
 }
 
