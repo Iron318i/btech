@@ -1,0 +1,77 @@
+<% var data = {
+title: "Admin Account | Btech",
+}; %>
+<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+
+
+<section class="section container">
+    <h2 class="h4">My Profile</h2>
+    <div class="profile-info row mb-3">
+	<div class="user col-auto">
+	    <div class="avatar">
+		<div class="avatar-border">
+		    <img src="./uploads/jonh-doe-avatar.png" alt="Jonh Doe">
+		</div>
+	    </div>
+	    <div class="user-info">
+		<div class="user-name">Jonh Doe</div>
+		<div class="description">Registered since 11.28.2019</div>
+	    </div>
+	</div>
+	<div class="load-image col-auto"><button type="button" class="btn btn-primary">Load another image</button></div>
+    </div>
+    <div class="row row-100">
+	<div class="col-md-6">
+	    <div class="form-row">
+		<div class="col-sm-6">
+		    <div class="form-group">
+			<label>First Name</label>
+			<input type="text" class="form-control form-control-lg" value="John">
+		    </div>
+		</div>
+		<div class="col-sm-6">
+		    <div class="form-group">
+			<label>Last Name</label>
+			<input type="text" class="form-control form-control-lg" value="Doe">
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="form-row">
+		<div class="col-sm-6">
+		    <div class="form-group">
+			<label>Username</label>
+			<input type="text" class="form-control form-control-lg" value="O2Recycle">
+		    </div>
+		</div>
+		<div class="col-sm-6">
+		    <div class="form-group">
+			<label>Password</label>
+			<div class="input-group input-group-lg">
+			    <input type="password" class="form-control" value="Password">
+			    <div class="input-group-append">
+				<button class="btn btn-outline-info" type="button">
+				    <svg class="icon eye-open">
+				    <use xlink:href="./img/sprite.svg#eye-open"></use>
+				    </svg>
+				</button>
+			    </div>
+			</div>
+			<span class="form-text text-right"><a href="#">Reset password?</a></span>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div class="col-md-6">
+	    <div class="form-group">
+		<label>Email-Address</label>
+		<input type="email" class="form-control form-control-lg" value="salesdepartment@o2recycle.uk*">
+	    </div>
+	    <div class="form-group mt-md-5">
+		<button type="button" class="btn btn-primary btn-lg btn-block">Update</button>
+	    </div>
+	</div>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>
