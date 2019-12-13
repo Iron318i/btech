@@ -1,7 +1,7 @@
 <% var data = {
-title: "Vendor Account | Btech",
+title: "Customer Account | Btech",
 }; %>
-<%= _.template(require('./../includes/vendor_header.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
 
 
 <section class="section container">
@@ -10,36 +10,18 @@ title: "Vendor Account | Btech",
 	<div class="user col-auto">
 	    <div class="avatar">
 		<div class="avatar-border">
-		    <img src="./uploads/o2recycle-avatar.png" alt="O2Recycle">
+		    <img src="./uploads/jonh-doe-avatar.png" alt="Jonh Doe">
 		</div>
 	    </div>
 	    <div class="user-info">
-		<div class="user-name">O2Recycle</div>
-		<div class="description">Top Price Promise</div>
+		<div class="user-name">Jonh Doe</div>
+		<div class="description">Registered since 11.28.2019</div>
 	    </div>
 	</div>
 	<div class="load-image col-auto"><button type="button" class="btn btn-primary">Load another image</button></div>
     </div>
     <div class="row row-100">
 	<div class="col-md-6">
-	    <div class="form-row">
-		<div class="col-sm-6">
-		    <div class="form-group">
-			<label>Company Name</label>
-			<input type="text" class="form-control form-control-lg" value="O2Recycle">
-		    </div>
-		</div>
-		<div class="col-sm-6">
-		    <div class="form-group">
-			<label>Title</label>
-			<input type="text" class="form-control form-control-lg" value="Top Price Promise">
-		    </div>
-		</div>
-	    </div>
-	    <div class="form-group">
-		<label>Overview <span class="font-weight-normal">(Description of your business what products do you refurbish?)</span></label>
-		<textarea rows="8" class="form-control">Selling your device is quick and easy with O2 Recycle</textarea>
-	    </div>
 	    <div class="form-row">
 		<div class="col-sm-6">
 		    <div class="form-group">
@@ -143,10 +125,6 @@ title: "Vendor Account | Btech",
 		    </div>
 		</div>
 	    </div>
-	    <div class="form-group">
-		<label>Website</label>
-		<input type="text" class="form-control form-control-lg" value="https://www.o2recycle.co.uk/">
-	    </div>
 	    <div class="form-group mt-md-5">
 		<button type="button" class="btn btn-primary btn-lg btn-block">Update</button>
 	    </div>
@@ -154,4 +132,4 @@ title: "Vendor Account | Btech",
     </div>
 </section>
 
-<%= _.template(require('./../includes/vendor_footer.html').default)(data) %>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

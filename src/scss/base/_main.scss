@@ -1735,7 +1735,7 @@ img{
 }
 .profile-info{
     align-items: center;
-    .company{
+    .user{
 	display: flex;
 	align-items: center;
     }
@@ -1747,9 +1747,9 @@ img{
 	border: 1px solid  $gray-300;
 	border-radius: 50%;
     }
-    .company-info{
+    .user-info{
 	padding: 0 1.5rem;
-	.company-name{
+	.user-name{
 	    font-weight: 700;
 	}
     }
