@@ -37,6 +37,13 @@
 	    }
 	}
     }
+    .profile-info{
+	.company{
+	    min-width: rem(315px);
+	    margin-right: 2rem;
+	    border-right: 1px solid #d4d4d4;
+	}
+    }
 }
 @include media-breakpoint-up(md) {
     .about-steps{
