@@ -4,7 +4,7 @@
 	    padding: rem(26px 0);
 	}
     }
-    .agreement-progress{
+    .header-progress{
 	.heading br{
 	    display: none;
 	}
@@ -74,6 +74,11 @@
 	    max-width: 270px;
 	    margin: 3rem auto 1rem;
 	    padding: 0 2rem;
+	}
+    }
+    .header-progress {
+	.date{
+	    font-size: rem(22px);
 	}
     }
 }
@@ -252,6 +257,11 @@
     .text-page{
 	padding-left: 30px;
 	padding-right: 30px;
+    }
+    .header-progress {
+	.info-block{
+	    max-width: 785px;
+	}
     }
 }
 @include media-breakpoint-up(xl) {

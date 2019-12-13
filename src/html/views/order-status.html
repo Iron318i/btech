@@ -1,0 +1,57 @@
+<% var data = {
+title: "Order Status | Btech",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="page-header bg-2">
+    
+    <div class="header-progress container">
+	<h1 class="h1">Order Status</h1>
+	<div class="row">
+	    <div class="col">
+		<div class="date ">Jan 18,2019</div>
+		<div class="heading">Order Placed</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col">
+		<div class="date"></div>
+		<div class="heading">Order Processed</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col">
+		<div class="date"></div>
+		<div class="heading">Order ready for shipping</div>
+		<div class="graph line">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col done">
+		<div class="date">Feb 18,2019</div>
+		<div class="heading">Shipped</div>
+		<div class="graph">
+		    <div class="indicator">
+			<svg class="icon"><use xlink:href="./img/sprite.svg#truck"></use></svg>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div class="info-block step-1">
+	    You order was shipped on February 18th
+	</div>
+    </div>
+</div>
+<section class="section container">
+   
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

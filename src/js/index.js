@@ -13,6 +13,8 @@ SameHeight.init('.same-height-md', "screen and (min-width: 768px)");
 SameHeight.init('.device-tmpl-1 .device-title');
 SameHeight.init('.device-tmpl-1 .device-img');
 SameHeight.init('.device-tmpl-1 .device-link');
+SameHeight.init('.header-progress .date');
+SameHeight.init('.header-progress .heading');
 +function ($) {
 
     // How you want to be Paid temporary script
