@@ -1755,3 +1755,25 @@ img{
 	}
     }
 }
+/*Cart*/
+.header-cart{
+    padding-top: rem(8px);
+    padding-bottom: rem(8px);
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    .progress{
+	margin-top: .7rem;
+	height: 6px;
+	background-color: #f3f3f3;
+	border-radius: 3px;
+	.progress-bar{
+	    background-color: #a3a3a3;
+	}
+    }
+    .col-payments{
+	.nav{
+	    justify-content: center;
+	}
+    }
+}

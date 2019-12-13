@@ -338,6 +338,7 @@
 	right: 2px;
 	top: 2px;
     }
+
 }
 @media(max-width: 374px){
     .btn-group-lg>.btn, .btn-lg {
@@ -355,5 +356,11 @@
     }
     .card-body {
 	padding: .6rem;
+    }
+    .header-cart {
+	font-size: 11px;
+	.progress{
+	    margin-bottom: 1rem;
+	}
     }
 }
