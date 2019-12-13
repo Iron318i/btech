@@ -51,7 +51,17 @@ title: "Order Status | Btech",
     </div>
 </div>
 <section class="section container">
-   
+    <div class="row orders-heading">
+	<div class="col-auto">
+	    <h2 class="h2">Details for Order <span class="font-weight-bold">#191234</span></h2>
+	</div>
+	<div class="col-auto">
+	    <ul class="nav">
+		<li><a href="#"><svg class="icon"><use xlink:href="./img/sprite.svg#down-arrow"></use></svg> Download Invoice PDF</a></li>
+		<li><a href="#"><svg class="icon"><use xlink:href="./img/sprite.svg#truck"></use></svg> Tracking Info</a></li>
+	    </ul>
+	</div>
+    </div>
 </section>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

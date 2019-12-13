@@ -1859,3 +1859,16 @@ img{
 	font-weight: 700;
     }
 }
+.orders-heading{
+    .nav{
+	flex-direction: column;
+	li {
+	    margin: .5rem 0;
+	    a{
+		.icon{
+		    color: #8b8b8b;
+		}
+	    }
+	}
+    }
+}

@@ -64,6 +64,24 @@
 	    }
 	}
     }
+    .orders-heading{
+	justify-content: space-between;
+	align-items: center;
+	.nav{
+	    flex-direction: row;
+	    li+li{
+		margin-left: 2rem;
+	    }
+	    li a{
+		.icon{
+		    color: #8b8b8b;
+		    width: 2rem;
+		    height: 2rem;
+		    margin-right: .5rem;
+		}
+	    }
+	}
+    }
 }
 @include media-breakpoint-up(md) {
     .about-steps{
