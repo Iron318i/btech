@@ -119,6 +119,14 @@
 	    font-size: rem(22px);
 	}
     }
+    .order-products-list{
+	.list-group-item{
+	    padding: rem(15px 22px);
+	}
+	.heading{
+	    padding: rem(10px 22px);
+	}
+    }
 }
 @media (min-width: 1280px){
     .row-100{

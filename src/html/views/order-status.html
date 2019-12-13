@@ -4,7 +4,7 @@ title: "Order Status | Btech",
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <div class="page-header bg-2">
-    
+
     <div class="header-progress container">
 	<h1 class="h1">Order Status</h1>
 	<div class="row">
@@ -51,7 +51,7 @@ title: "Order Status | Btech",
     </div>
 </div>
 <section class="section container">
-    <div class="row orders-heading">
+    <div class="row orders-heading mb-2">
 	<div class="col-auto">
 	    <h2 class="h2">Details for Order <span class="font-weight-bold">#191234</span></h2>
 	</div>
@@ -60,6 +60,132 @@ title: "Order Status | Btech",
 		<li><a href="#"><svg class="icon"><use xlink:href="./img/sprite.svg#down-arrow"></use></svg> Download Invoice PDF</a></li>
 		<li><a href="#"><svg class="icon"><use xlink:href="./img/sprite.svg#truck"></use></svg> Tracking Info</a></li>
 	    </ul>
+	</div>
+    </div>
+    <div class="row">
+	<div class="col-md-6 d-flex">
+	    <div class="card card-body p-lg-4">
+		<h4 class="h4 mb-3">Shopping to:</h4>
+		<div class="row">
+		    <div class="col-md-5 text-secondary">
+			<p>Resolution : John Doe</p>
+			<p>c/o Shapeways</p>
+			<p>412 Park Ave S</p>
+		    </div>
+		    <div class="col-md-5 text-secondary">
+			<p>R8 Suite 900</p>
+			<p>New York, NY 21488</p>
+			<p>United States</p>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div class="col-md-6 d-flex gap-sm">
+	    <div class="card card-body p-lg-4">
+		<h4 class="h4 mb-3">Shopping to:</h4>
+		<div class="row">
+		    <div class="col-md-5 text-secondary">
+			<p>Resolution : John Doe</p>
+			<p>c/o Shapeways</p>
+			<p>412 Park Ave S</p>
+		    </div>
+		    <div class="col-md-5 text-secondary">
+			<p>R8 Suite 900</p>
+			<p>New York, NY 21488</p>
+			<p>United States</p>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <div class="order-products-list mt-3">
+	<div class="heading">
+	    <div class="row">
+		<div class="col item"><h4>Item</h4></div>
+		<div class="col status"><h4>Status</h4></div>
+		<div class="col quantity"><h4>Quantity</h4></div>
+		<div class="col total"><h4>Total</h4></div>
+	    </div>
+	</div>
+	<div class="list-group">
+	    <div class="list-group-item">
+		<div class="row">
+		    <div class="col item">
+			<a href="#" class="img-wrp">
+			    <img src="./uploads/device-150x170-2.png" alt="iPhone XS 256GB">
+			</a>
+			<div class="title">iPhone XS 256GB Space Gray<br> Unlocked</div>
+		    </div>
+		    <div class="col status"><span class="badge"><svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>All Done!</span></div>
+		    <div class="col quantity">1</div>
+		    <div class="col total">$192.00</div>
+		</div>
+	    </div>
+	    <div class="list-group-item">
+		<div class="row">
+		    <div class="col item">
+			<a href="#" class="img-wrp">
+			    <img src="./uploads/device-150x170-1.png" alt="iPhone XS 256GB">
+			</a>
+			<div class="title">iPhone XS 256GB Space Gray<br> Unlocked</div>
+		    </div>
+		    <div class="col status"><span class="badge"><svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>All Done!</span></div>
+		    <div class="col quantity">1</div>
+		    <div class="col total">$192.00</div>
+		</div>
+	    </div>
+	    <div class="list-group-item">
+		<div class="row">
+		    <div class="col item">
+			<a href="#" class="img-wrp">
+			    <img src="./uploads/device-150x170-3.png" alt="iPhone XS 256GB">
+			</a>
+			<div class="title">iPhone XS 256GB Space Gray<br> Unlocked</div>
+		    </div>
+		    <div class="col status"><span class="badge"><svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>All Done!</span></div>
+		    <div class="col quantity">1</div>
+		    <div class="col total">$192.00</div>
+		</div>
+	    </div>
+	    <div class="list-group-item">
+		<div class="row">
+		    <div class="col item">
+			<a href="#" class="img-wrp">
+			    <img src="./uploads/device-150x170-4.png" alt="iPhone XS 256GB">
+			</a>
+			<div class="title">iPhone XS 256GB Space Gray<br> Unlocked</div>
+		    </div>
+		    <div class="col status"><span class="badge"><svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>All Done!</span></div>
+		    <div class="col quantity">1</div>
+		    <div class="col total">$192.00</div>
+		</div>
+	    </div>
+	    <div class="list-group-item">
+		<div class="row">
+		    <div class="col item">
+			<a href="#" class="img-wrp">
+			    <img src="./uploads/device-150x170-5.png" alt="iPhone XS 256GB">
+			</a>
+			<div class="title">iPhone XS 256GB Space Gray<br> Unlocked</div>
+		    </div>
+		    <div class="col status"><span class="badge"><svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>All Done!</span></div>
+		    <div class="col quantity">1</div>
+		    <div class="col total">$192.00</div>
+		</div>
+	    </div>
+	    <div class="list-group-item">
+		<div class="row">
+		    <div class="col item">
+			<a href="#" class="img-wrp">
+			    <img src="./uploads/device-150x170-6.png" alt="iPhone XS 256GB">
+			</a>
+			<div class="title">iPhone XS 256GB Space Gray<br> Unlocked</div>
+		    </div>
+		    <div class="col status"><span class="badge"><svg class="icon"><use xlink:href="./img/sprite.svg#correct-symbol"></use></svg>All Done!</span></div>
+		    <div class="col quantity">1</div>
+		    <div class="col total">$192.00</div>
+		</div>
+	    </div>
 	</div>
     </div>
 </section>

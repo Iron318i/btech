@@ -1872,3 +1872,49 @@ img{
 	}
     }
 }
+.order-products-list{
+    text-align: center;
+    font-size: rem(16px);
+    .heading {
+	padding: $list-group-item-padding-y $list-group-item-padding-x;
+	h4{
+	    text-align: center;
+	    font-size: rem(16px);
+	    font-weight: 400;
+	}
+    }
+    .row{
+	align-items: center;
+    }
+    .list-group-item:nth-child(odd){
+	background-color: #fbfbfb;
+    }
+    .item{
+	flex: 0 0 47%;
+	display: flex;
+    }
+    .img-wrp{
+	flex: 0 0 60px;
+	margin-right: 1rem;
+    }
+    .title{
+	text-align: left;
+    }
+    .status{
+	.badge{
+	    font-size: rem(18px);
+	    font-weight: 300;
+	    color: #fff;
+	    background-color: #8b8b8b;
+	    min-width: 185px;
+	    padding: rem(11px 13px);
+	    .icon{
+		margin-right: .5rem;
+		vertical-align: top;
+	    }
+	}
+    }
+    .total{
+	font-weight: 700;
+    }
+}
