@@ -36,7 +36,7 @@ SameHeight.init('.header-progress .heading');
 	nav: true,
 	dots: false,
 	responsiveClass: true,
-	navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>'],
+	navText: ['<svg class="icon"><use xlink:href="./img/sprite.svg#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="./img/sprite.svg#right-arrow"></use></svg>'],
 	responsive: {
 	    0: {
 		items: 1,
@@ -67,7 +67,7 @@ SameHeight.init('.header-progress .heading');
 	nav: true,
 	dots: false,
 	responsiveClass: true,
-	navText: ['<svg class="icon"><use xlink:href="#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="#right-arrow"></use></svg>'],
+	navText: ['<svg class="icon"><use xlink:href="./img/sprite.svg#left-arrow"></use></svg>', '<svg class="icon"><use xlink:href="./img/sprite.svg#right-arrow"></use></svg>'],
 	responsive: {
 	    0: {
 		nav: false,
