@@ -1814,3 +1814,12 @@ img{
 	color: #999;
     }
 }
+.cart-total{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    .price{
+	font-weight: 700;
+    }
+}
