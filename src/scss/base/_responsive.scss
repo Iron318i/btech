@@ -44,19 +44,24 @@
 	    border-right: 1px solid #d4d4d4;
 	}
     }
-    .info-block{
-	margin-top: 1rem;
-	&:before{
-	    left:3.5%;
+    .header-progress{
+	.date {
+	    font-size: 1.2rem;
 	}
-	&.step-2:before{
-	    left:33.5%;
-	}
-	&.step-3:before{
-	    left:64%;
-	}
-	&.step-4:before{
-	    left:94%;
+	.info-block{
+	    margin-top: 1rem;
+	    &:before{
+		left:3.5%;
+	    }
+	    &.step-2:before{
+		left:33.5%;
+	    }
+	    &.step-3:before{
+		left:64%;
+	    }
+	    &.step-4:before{
+		left:94%;
+	    }
 	}
     }
 }
@@ -277,19 +282,19 @@
 	.info-block{
 	    max-width: 785px;
 	}
-    }
-    .info-block{
-	&:before{
-	    left:2%;
-	}
-	&.step-2:before{
-	    left:33%;
-	}
-	&.step-3:before{
-	    left:64.5%;
-	}
-	&.step-4:before{
-	    left:96%;
+	.info-block{
+	    &:before{
+		left:2%;
+	    }
+	    &.step-2:before{
+		left:33%;
+	    }
+	    &.step-3:before{
+		left:64.5%;
+	    }
+	    &.step-4:before{
+		left:96%;
+	    }
 	}
     }
 }
@@ -401,5 +406,8 @@
 	.progress{
 	    margin-bottom: 1rem;
 	}
+    }
+    .header-progress .info-block{
+	border-radius: 0;
     }
 }
