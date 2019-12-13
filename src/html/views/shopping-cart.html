@@ -34,11 +34,30 @@ title: "Shopping Cart | Btech",
 <section class="section">
     <div class="container">
 	<div class="row">
-	    <div class="col-lg-9 col-md-8 gap-sm">
+	    <div class="col-lg-9 col-md-8">
 		<h2 class="h2">Your cart</h2>
-		<div class="card card-body">
+		<div class="card card-body cart-product-item mb-1">
+		    <div class="product row">
+			<div class="img col-auto">
+			    <a href="#">
+				<img src="./uploads/device-150x170-1.png" alt="iPhone XS 256GB">
+			    </a>
+			</div>
+			<div class="content col-auto">
+			    <h3 class="title">iPhone XS 256GB Space Gray<br> Unlocked</h3>
+			    <div class="price">$192.00 <span class="old">$649.00</span></div>
+			</div>
+			<div class="ml-md-auto product-form col-auto">
+			    <div class="mb-2">
+				<input type="number" value="1" class="form-control form-control-lg">
+			    </div>
+			    <div class="form-group">
+				<a href="#" class="remove-link">Remove</a>
+			    </div>
+			</div>
+		    </div>
 		    <div class="form-group">
-			<label>Shipping to US (mainland)</label>
+			<label class="font-weight-normal fsz-12">Shipping to US (mainland)</label>
 			<div class="block-radio">
 			    <input type="radio" id="ShippingToUS1" name="ShippingToUS" checked>
 			    <label for="ShippingToUS1"><span>4 days - USPS - First Class</span><span>$4.99</span></label>
@@ -48,9 +67,55 @@ title: "Shopping Cart | Btech",
 			    <label for="ShippingToUS2"><span>48 hours - FedEx - 2Days</span><span>$14.99</span></label>
 			</div>
 		    </div>
+		    <div class="form-group">
+			<label class="font-weight-normal fsz-12">Direct warranty</label>
+			<div class="block-radio">
+			    <input type="radio" id="DirectWarranty1" name="DirectWarranty" checked>
+			    <label for="DirectWarranty1"><span>4 days - USPS - First Class</span><span>$4.99</span></label>
+			</div>
+		    </div>
+		</div>
+		<div class="card card-body cart-product-item">
+		    <div class="product row">
+			<div class="img col-auto">
+			    <a href="#">
+				<img src="./uploads/device-150x170-1.png" alt="iPhone XS 256GB">
+			    </a>
+			</div>
+			<div class="content col-auto">
+			    <h3 class="title">iPhone XS 256GB Space Gray<br> Unlocked</h3>
+			    <div class="price">$192.00 <span class="old">$649.00</span></div>
+			</div>
+			<div class="ml-md-auto product-form col-auto">
+			    <div class="mb-2">
+				<input type="number" value="1" class="form-control form-control-lg">
+			    </div>
+			    <div class="form-group">
+				<a href="#" class="remove-link">Remove</a>
+			    </div>
+			</div>
+		    </div>
+		    <div class="form-group">
+			<label class="font-weight-normal fsz-12">Shipping to US (mainland)</label>
+			<div class="block-radio">
+			    <input type="radio" id="ShippingToUS-21" name="ShippingToUS-2" checked>
+			    <label for="ShippingToUS-21"><span>4 days - USPS - First Class</span><span>$4.99</span></label>
+			</div>
+			<div class="block-radio">
+			    <input type="radio" id="ShippingToUS-22" name="ShippingToUS-2">
+			    <label for="ShippingToUS-22"><span>48 hours - FedEx - 2Days</span><span>$14.99</span></label>
+			</div>
+		    </div>
+		    <div class="form-group">
+			<label class="font-weight-normal fsz-12">Direct warranty</label>
+			<div class="block-radio">
+			    <input type="radio" id="DirectWarranty-21" name="DirectWarranty-2" checked>
+			    <label for="DirectWarranty-21"><span>4 days - USPS - First Class</span><span>$4.99</span></label>
+			</div>
+		    </div>
 		</div>
 	    </div>
-	    <div class="col-lg-3 col-md-4">
+	    <div class="d-sm-none d-md-block col-lg-3 col-md-4">
 		<h2 class="h2">Summary</h2>
 		<div class="card card-body">
 
