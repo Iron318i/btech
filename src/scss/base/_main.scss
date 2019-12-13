@@ -97,7 +97,7 @@ input[type=number]{
 }
 .custom-radio{
     .custom-control-label:before{
-	background-color: #f3f3f3;
+	background-color: $gray-100;
 	border-color: #a1a1a1;
     }
 }
@@ -415,7 +415,7 @@ img{
 }
 
 .your-payment-box{
-    background-color: #f3f3f3;
+    background-color: $gray-100;
     padding: $card-spacer-x;
     margin-bottom: 1.5rem;
     .secure-heading{
@@ -854,7 +854,7 @@ img{
 	}
 	.network{
 	    padding: 4px 3px;
-	    border: 1px solid #e6e6e6;
+	    border: 1px solid $gray-200;
 	    border-radius: 3px;
 	    text-align: center;
 	    display: flex;
@@ -897,7 +897,7 @@ img{
 	    span{
 		padding: 3px 5px;
 		background-color: #fff;
-		border: 1px solid #e6e6e6;
+		border: 1px solid $gray-200;
 	    }
 	    span+span{
 		margin-left: 5px;
@@ -1368,7 +1368,7 @@ img{
     .custom-control-input:checked~.custom-control-label:before {
 	color: #999;
 	border-color: #9b9b9b;
-	background-color: #f3f3f3;
+	background-color: $gray-100;
     }
     .custom-control-input:checked ~ .custom-control-label {
 	&::after {
@@ -1451,7 +1451,7 @@ img{
 	    width: rem(85px);
 	    height: rem(85px);
 	    padding: .5rem;
-	    border: 1px solid #e6e6e6;
+	    border: 1px solid $gray-200;
 	    display: flex;
 	    img{
 		margin: auto;
@@ -1482,7 +1482,7 @@ img{
     }
 }
 .breadcrumb{
-    border: 1px solid #e6e6e6;
+    border: 1px solid $gray-200;
     a{
 	color: #000;
     }
@@ -1528,7 +1528,7 @@ img{
 	    }
 	    .network {
 		padding: 8px 3px;
-		border: 1px solid #e6e6e6;
+		border: 1px solid $gray-200;
 		border-radius: 3px;
 		text-align: center;
 		display: flex;
@@ -1619,7 +1619,7 @@ img{
 	.btns-block{
 	    width: 100%;
 	    background-color: white;
-	    border: 1px solid #e6e6e6;
+	    border: 1px solid $gray-200;
 	    border-radius: 3px;
 	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
 	    padding: 1rem;
@@ -1629,7 +1629,7 @@ img{
 	}
     }
     .product-tabs{
-	border-top: 1px solid #e6e6e6;
+	border-top: 1px solid $gray-200;
 	padding-top: 20px;
 	margin-top: 20px;
 	.nav-link{
@@ -1765,15 +1765,31 @@ img{
     .progress{
 	margin-top: .7rem;
 	height: 6px;
-	background-color: #f3f3f3;
+	background-color: $gray-100;
 	border-radius: 3px;
 	.progress-bar{
-	    background-color: #a3a3a3;
+	    background-color: $gray-500;
 	}
     }
     .col-payments{
 	.nav{
 	    justify-content: center;
 	}
+    }
+}
+.block-radio{
+    input{
+	display: none;
+    }
+    label{
+	padding: rem(12px 18px);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: $gray-100;
+	border: 1px solid $gray-200;
+	color: #666;
+	font-weight: 400;
+	margin-bottom: 0;
     }
 }
