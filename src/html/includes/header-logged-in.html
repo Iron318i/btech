@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="stylesheet" href="css/style.bundle.css" />
+
+	<title><%=title%></title>
+    </head>
+    <body>
+	<header class="site-header logged-in">
+	    <div class="container-fluid">
+		<div class="row top">
+		    <div class="col logo">
+			<a href="/"><img src="./img/main-logo.png" alt="Btech"></a>
+		    </div>
+		    <div class="col search">
+			<div class="input-group">
+			    <input type="text" class="form-control">
+			    <div class="input-group-append">
+				<button class="btn btn-outline-info" type="button"><svg class="icon"><use xlink:href="./img/sprite.svg#search"></use></svg></button>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col cart">
+			<div class="dropdown no-arrow">
+			    <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img class="img-profile rounded-circle" src="./uploads/jonh-doe-avatar.png" alt="Uuno Turhapuro">
+				<span class="d-none d-lg-inline"><span class="text-secondary">Hello,</span> Jonh Doe</span>
+			    </a>
+			    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+				<a class="dropdown-item" href="#">Profile</a>
+				<a class="dropdown-item" href="#">Settings</a>
+				<a class="dropdown-item" href="#">Activity Log</a>
+				<a class="dropdown-item" href="#">Logout</a>
+			    </div>
+			</div>
+			<div class="dropdown">
+			    <button class="btn btn-link dropdown-toggle fsz-12 pr-0" type="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Settings
+			    </button>
+			    <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
+				<a class="dropdown-item" href="#">Setting</a>
+				<a class="dropdown-item" href="#">Setting</a>
+				<a class="dropdown-item" href="#">Setting</a>
+				<a class="dropdown-item" href="#">Setting</a>
+				<a class="dropdown-item" href="#">Setting</a>
+			    </div>
+			</div>
+			<div class="dropdown">
+			    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				CA$
+			    </button>
+			    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownCurrency">
+				<a class="dropdown-item" href="#">CAD</a>
+				<a class="dropdown-item" href="#">USD</a>
+				<a class="dropdown-item" href="#">EUR</a>
+				<a class="dropdown-item" href="#">GBP</a>
+			    </div>
+			</div>
+			<a href="#" class="btn btn-link btn-cart">Cart</a>
+		    </div>
+		</div>
+		<div class="row bottom">
+		    <div class="col products">
+			<a href="#" data-toggle="collapse" data-target="#allProductsMenu">All Products <svg class="icon"><use xlink:href="./img/sprite.svg#menu-button"></use></svg></a>
+		    </div>
+		    <div class="col main-menu">
+			<ul class="nav">
+			    <li><a href="#">iPhone</a></li>
+			    <li><a href="#">iPad</a></li>
+			    <li><a href="#">Macbook</a></li>
+			    <li><a href="#">Samsung</a></li>
+			    <li><a href="#">RECYLE YOUR PHONE</a></li>
+			</ul>
+		    </div>
+		    <div class="col user-menu">
+			<ul class="nav">
+			    <li><a href="#" class="i-order-status">Order status</a></li>
+			    <li><a href="/register.html" class="i-sign-in">Sign In</a></li>
+			    <li><a href="#" class="i-faqs">FAQ`s</a></li>
+			    <li><a href="#" class="i-contact">CONTACT US</a></li>
+			</ul>
+		    </div>
+		    <div class="col mobile-menu-btn d-none">
+			<a href="#" id="mobileMenuTogller">Menu <svg class="icon"><use xlink:href="./img/sprite.svg#menu-button"></use></svg></a>
+		    </div>
+		</div>
+	    </div>
+	    <div id="allProductsMenu">
+		<div class="aside">
+		    <ul id="brandsNav" class="nav">
+			<li><a class="active" href="#menu-iphone">iPhone</a></li>
+			<li><a href="#menu-ipad">iPad</a></li>
+			<li><a href="#menu-macbook">Macbook</a></li>
+			<li><a href="#menu-samsung">Samsung</a></li>
+		    </ul>
+		</div>
+		<div class="menu">
+		    <div id="menu-iphone" class="sub-menu-wrp">
+			<div class="heading">
+			    <h4 class="h4">iPhone</h4>
+			    <p><a href="#">see all ></a></p>
+			</div>
+			<div class="sub-menu">
+			    <ul>
+				<li><a href="#">All iPhone</a></li>
+				<li><a href="#">iPhone 11</a></li>
+				<li><a href="#">iPhone 11 Pro</a></li>
+				<li><a href="#">iPhone 11 Pro Max</a></li>
+				<li><a href="#">iPhone XS</a></li>
+				<li><a href="#">iPhone XS Max</a></li>
+				<li><a href="#">iPhone XR</a></li>
+				<li><a href="#">iPhone X</a></li>
+				<li><a href="#">iPhone 8</a></li>
+				<li><a href="#">iPhone 8 Plus</a></li>
+				<li><a href="#">iPhone 7</a></li>
+				<li><a href="#">iPhone 7 Plus</a></li>
+				<li><a href="#">iPhone SE</a></li>
+				<li><a href="#">iPhone 6s</a></li>
+				<li><a href="#">iPhone 6s Plus</a></li>
+				<li><a href="#">iPhone 6</a></li>
+				<li><a href="#">iPhone 6 Plus</a></li>
+				<li><a href="#">iPhone 5C</a></li>
+				<li><a href="#">iPhone 5s</a></li>
+				<li><a href="#">iPhone 5</a></li>
+			    </ul>
+			</div>
+			<div class="addition">
+			    <img src="./uploads/iphone8-banner.png" alt="iphone8-banner.png">
+			</div>
+		    </div>
+		    <div id="menu-ipad" class="sub-menu-wrp" style="display: none;">
+			<div class="heading">
+			    <h4 class="h4">iPad</h4>
+			    <p><a href="#">see all ></a></p>
+			</div>
+			<div class="sub-menu">
+			    <ul>
+				<li><a href="#">All iPad</a></li>
+				<li><a href="#">iPad Pro</a></li>
+				<li><a href="#">iPad Mini 4</a></li>
+				<li><a href="#">iPad Mini 3</a></li>
+				<li><a href="#">iPad Mini 2</a></li>
+				<li><a href="#">iPad Air 2</a></li>
+				<li><a href="#">iPad Air</a></li>
+				<li><a href="#">iPad 6</a></li>
+				<li><a href="#">iPad 5</a></li>
+				<li><a href="#">iPad 4</a></li>
+				<li><a href="#">iPad 3</a></li>
+				<li><a href="#">iPad 2</a></li>
+			    </ul>
+			</div>
+		    </div>
+		    <div id="menu-macbook" class="sub-menu-wrp" style="display: none;">
+			<div class="heading">
+			    <h4 class="h4">MacBook</h4>
+			    <p><a href="#">see all ></a></p>
+			</div>
+			<div class="sub-menu">
+			    <ul>
+				<li><a href="#">All MacBook</a></li>
+				<li><a href="#">MacBook Air</a></li>
+				<li><a href="#">MacBook Pro</a></li>
+				<li><a href="#">Macbook</a></li>
+				<li><a href="#">MacBook Retina</a></li>
+			    </ul>
+			</div>
+		    </div>
+		    <div id="menu-samsung" class="sub-menu-wrp" style="display: none;">
+			<div class="heading">
+			    <h4 class="h4">Samsung</h4>
+			    <p><a href="#">see all ></a></p>
+			</div>
+			<div class="sub-menu">
+			    <ul>
+				<li><a href="#">All Galaxy</a></li>
+				<li><a href="#">Galaxy S10</a></li>
+				<li><a href="#">Galaxy S10+</a></li>
+				<li><a href="#">Galaxy S9</a></li>
+				<li><a href="#">Galaxy S9+</a></li>
+				<li><a href="#">Galaxy S8</a></li>
+				<li><a href="#">Galaxy S8+</a></li>
+				<li><a href="#">Galaxy S8 Active</a></li>
+				<li><a href="#">Galaxy S7</a></li>
+				<li><a href="#">Galaxy S7 Edge</a></li>
+				<li><a href="#">Galaxy S7 Active</a></li>
+				<li><a href="#">Galaxy S6</a></li>
+				<li><a href="#">Galaxy S6 Edge</a></li>
+				<li><a href="#">Galaxy S6 Active</a></li>
+				<li><a href="#">Galaxy S5</a></li>
+				<li><a href="#">Galaxy S5 Mini</a></li>
+				<li><a href="#">Galaxy S4</a></li>
+				<li><a href="#">Galaxy Note 9</a></li>
+				<li><a href="#">Galaxy Note 8</a></li>
+				<li><a href="#">Galaxy Note 5</a></li>
+				<li><a href="#">Galaxy Note 4</a></li>
+				<li><a href="#">Galaxy J7</a></li>
+				<li><a href="#">Galaxy J3</a></li>
+				<li><a href="#">Galaxy J3 Prime</a></li>
+				<li><a href="#">Galaxy J2 Prime</a></li>
+			    </ul>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</header>

@@ -186,6 +186,15 @@
 		}
 	    }
 	}
+	&.logged-in {
+	    .logo {
+		flex: 0 0 20%;
+	    }
+	    .btn{
+		padding-left: 5px;
+		padding-right: 5px;
+	    }
+	}
     }
     @media(min-width: 768px){
 	.user-menu{
@@ -218,6 +227,11 @@
 		justify-content: center;
 	    }
 	}
+	&.logged-in {
+	    .cart {
+		flex: 0 0 36%;
+	    }
+	}
     }
     @media(min-width: 1440px) and (max-width: 1599px) {
 	.products,
@@ -226,6 +240,11 @@
 	}
 	.cart{
 	    flex: 0 0 20%;
+	}
+	&.logged-in {
+	    .cart {
+		flex: 0 0 28%;
+	    }
 	}
     }
     @media(min-width: 1600px){
@@ -239,6 +258,14 @@
 	}
 	.user-menu{
 	    flex: 0 0 50%;
+	}
+	&.logged-in {
+	    .logo{
+		flex: 0 0 19%;
+	    }
+	    .search{
+		flex: 0 0 57%;
+	    }
 	}
     }
 }
