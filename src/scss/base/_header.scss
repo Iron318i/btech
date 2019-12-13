@@ -84,6 +84,20 @@
 	    background-size: 25px;
 	}
     }
+    .img-profile{
+	width: rem(35px);
+	height: rem(35px);
+	box-shadow: 0 0 2px 1px #858585;
+	margin-right: 5px;
+    }
+    .dropdown-toggle{
+	text-transform: none;
+    }
+    .dropdown.no-arrow{
+	.dropdown-toggle:after{
+	    display: none;
+	}
+    }
     .cart{
 	text-align: right;
 	.dropdown{
@@ -186,7 +200,7 @@
 	    flex: 0 0 24%;
 	}
 	.cart{
-	    flex: 0 0 16%;
+	    flex: 0 0 25%;
 	}
 	.bottom{
 	    //justify-content: center;
@@ -211,7 +225,7 @@
 	    flex: 0 0 18%;
 	}
 	.cart{
-	    flex: 0 0 10%;
+	    flex: 0 0 20%;
 	}
     }
     @media(min-width: 1600px){
